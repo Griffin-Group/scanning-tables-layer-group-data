@@ -1,4 +1,5 @@
 #!/bin/env gap
+# Copyright 2024 Bernard Field
 
 LoadPackage("NumericalSgps", false); # For CeilingOfRational
 Read("RepresentativeSymmetryOps.gap");

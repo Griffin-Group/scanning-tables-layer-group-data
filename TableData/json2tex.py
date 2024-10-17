@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Copyright 2024 Bernard Field
 
 import warnings
 import json

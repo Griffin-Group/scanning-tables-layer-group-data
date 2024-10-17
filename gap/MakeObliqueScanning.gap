@@ -1,4 +1,5 @@
 #!/usr/bin/env gap
+# Copyright 2024 Bernard Field
 
 # Find the oblique scanning group of each layer group.
 
