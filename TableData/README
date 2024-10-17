@@ -1,0 +1,100 @@
+# JSON structures
+
+## Special JSON types
+
+3vector
+array [length 3]
+- number [integer] or string [fraction]
+
+3vectorInt
+array [length 3]
+- number [integer]
+
+matrix [dimension N]
+array [length N]
+- array [length N]
+-- number [integer] or string [fraction]
+
+Group
+object
+- 'number': number [integer] (group IT number)
+- 'origin': 3vector (location of standard origin)
+- 'setting': string (group setting)
+
+GroupHM
+object
+- 'number': number [integer]
+- 'origin': 3vector
+- 'setting': string
+- 'symbol': string (Hermann-Mauguin symbol)
+
+## File structures
+
+LayerScanningTables.json
+
+array [length 80] (index = scanned layer group IT number)
+- array (different scanning groups)
+-- object
+--- 'H': number [integer] (scanning group IT number)
+--- 'H_setting': string (setting of scanning group)
+--- 'H_origin': 3vector (location of standard origin of scanning group)
+--- 'orientation': array (list of orientations of the sectional line with same scanning group)
+---- 3vectorInt (direction)
+--- 'd': array (list of scanning directions, one-to-one with 'orientation', forming conventional basis)
+---- 3vectorInt (direction)
+--- 'general': number [integer] (general position, sectional rod group IT number)
+--- 'general_length': number (scaling factor between lattice of scanning and sectional rod group. Because I use conventional bases, this should be 1.)
+--- 'general_setting': string (general position, sectional rod group setting)
+--- 'general_origin': 3vector (general position, location of standard origin)
+--- 'special': array (special positions. May be empty)
+---- 'number': number [integer] (sectional rod group IT number)
+---- 'setting': string (sectional rod group setting)
+---- 'length': number (scaling factor between lattice of scanning and sectional rod group. Because I use conventional bases, this should be 1.)
+---- 'origin': 3vector (location of standard origin)
+---- 's': array (locations of this special position)
+----- number [integer] or string [fraction]
+
+ObliqueScanning.json
+
+array [length 80] (index = scanned layer group IT number)
+- number [integer] (layer group IT number of oblique scanning group)
+
+Orbits.json
+
+array [length 48] (index = scanning layer group IT number)
+- object
+-- 'a': array (scanning group setting with first vector aligned with orientation and origin=[0,0,0])
+-- 'b': array (scanning group setting with first vector not aligned with orientation and origin[0,0,0])
+-- 'ao': array (scanning group setting with first vector aligned with orientation and origin=["1/4","1/4",0]. Only present for centring groups)
+-- 'bo': array (scanning group setting with first vector not aligned with orientation and origin=["1/4","1/4",0]. Only present for centring groups)
+--- array (sets of 's' in the same orbit. Last entry will be the general position, multiples of "1/7")
+---- number [0] or string [fraction]
+
+LayerScanningTablesProcessed.json
+array [length 80] (index = scanned layer group IT number)
+- object (main tables and auxiliary tables)
+-- 'group': object (scanned layer group)
+--- 'number': number [integer] (layer group IT number)
+--- 'symbol': string (HM symbol)
+-- 'table': array (different scanning groups)
+--- object
+---- 'H': GroupHM (scanning group)
+---- 'orientation': array (list of orientations of the sectional line with same scanning group)
+----- 3vectorInt (direction)
+---- 'd': array (list of scanning directions, one-to-one with 'orientation', forming conventional basis)
+----- 3vectorInt (direction)
+---- 'general': GroupHM (sectional rod group at the general position)
+---- 'general_linear_orbit': string (linear orbit of a general position s)
+---- 'special': array (special positions. May be empty)
+----- object (each distinct sectional rod group)
+------ 'rod': GroupHM (sectional rod group)
+------ 's': array (locations of this special position)
+------- number [integer] or string [fraction]
+------ 'linear_orbit': string ('s' processed such that the orbit structure is evident.)
+-- 'auxiliary': array (different rows/scanning groups)
+--- object (In a few cases, two orientations give the same H. I list them separately here to simplify the format.)
+---- 'orientation': string (description of allowed values of [uv0])
+---- 'c': string (either '[u,v,0]' or '[u,v,0]/2'. Form of orientation vector)
+---- 'd': string (string description of allowed values of p and q, for scanning direction)
+---- 'd_form': string (functional relationship between d and p,q. The same for all objects in the same 'auxiliary')
+---- 'H': GroupHM (scanning group)

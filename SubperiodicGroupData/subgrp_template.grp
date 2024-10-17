@@ -1,0 +1,32 @@
+#############################################################################
+##
+#A  subgrp.grp                Cryst library                     Bernard Field
+##
+#Y  Copyright 2024  by  Bernard Field
+##
+##  Data for IT subperiodic groups
+##
+
+#############################################################################
+##
+#M  FriezeGroupList . . . . . . . . . . . . . . . . data for IT frieze groups
+##
+BindGlobal("FriezeGroupList",
+frieze.gi
+);
+
+#############################################################################
+##
+#M  RodGroupList . . . . . . . . . . . . . . . . . . . data for IT rod groups
+##
+BindGlobal("RodGroupList",
+rod.gi
+);
+
+#############################################################################
+##
+#M  LayerGroupList . . . . . . . . . . . . . . . . . data for IT layer groups
+##
+BindGlobal("LayerGroupList",
+layer.gi
+);

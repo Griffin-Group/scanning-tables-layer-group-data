@@ -1,0 +1,12496 @@
+[
+{
+"group": {
+"number": 1,
+"symbol": "p1"
+},
+"table": [
+{
+"H": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "s",
+"special": []
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 1,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p1"
+}
+}
+]
+},
+{
+"group": {
+"number": 2,
+"symbol": "p-1"
+},
+"table": [
+{
+"H": {
+"number": 2,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p-1"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 2,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p-1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 2,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p-1"
+}
+}
+]
+},
+{
+"group": {
+"number": 3,
+"symbol": "p112"
+},
+"table": [
+{
+"H": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p112"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p121"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 4,
+"symbol": "p11m"
+},
+"table": [
+{
+"H": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p11m"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1m1"
+},
+"general_linear_orbit": "s",
+"special": []
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 4,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11m"
+}
+}
+]
+},
+{
+"group": {
+"number": 5,
+"symbol": "p11a"
+},
+"table": [
+{
+"H": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p11a"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1c1"
+},
+"general_linear_orbit": "s",
+"special": []
+},
+{
+"H": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "3",
+"symbol": "p11b"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[s, (s+1/2)]",
+"special": []
+},
+{
+"H": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "2",
+"symbol": "p11n"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+-1,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[s, (s+1/2)]",
+"special": []
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, even v",
+"c": "[u,v,0]",
+"d": "Odd q",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11a"
+}
+},
+{
+"orientation": "Any u, odd v",
+"c": "[u,v,0]",
+"d": "Even q",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "3",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11b"
+}
+},
+{
+"orientation": "Any u, odd v",
+"c": "[u,v,0]",
+"d": "Odd q",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11n"
+}
+}
+]
+},
+{
+"group": {
+"number": 6,
+"symbol": "p112/m"
+},
+"table": [
+{
+"H": {
+"number": 6,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p112/m"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1m1"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 6,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p12/m1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 6,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/m"
+}
+}
+]
+},
+{
+"group": {
+"number": 7,
+"symbol": "p112/a"
+},
+"table": [
+{
+"H": {
+"number": 7,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p112/a"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1c1"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 7,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p12/c1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+},
+{
+"H": {
+"number": 7,
+"origin": [
+0,
+0,
+0
+],
+"setting": "3",
+"symbol": "p112/b"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 2,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p-1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p121"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 7,
+"origin": [
+0,
+0,
+0
+],
+"setting": "2",
+"symbol": "p112/n"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+-1,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 2,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p-1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 3,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "bac",
+"symbol": "p121"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, even v",
+"c": "[u,v,0]",
+"d": "Odd q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/a"
+}
+},
+{
+"orientation": "Any u, odd v",
+"c": "[u,v,0]",
+"d": "Even q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "3",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/b"
+}
+},
+{
+"orientation": "Any u, odd v",
+"c": "[u,v,0]",
+"d": "Odd q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/n"
+}
+}
+]
+},
+{
+"group": {
+"number": 8,
+"symbol": "p211"
+},
+"table": [
+{
+"H": {
+"number": 8,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "p211"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 8,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+},
+{
+"H": {
+"number": 8,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "p121"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "s",
+"special": []
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 1,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p1"
+}
+}
+]
+},
+{
+"group": {
+"number": 9,
+"symbol": "p2_111"
+},
+"table": [
+{
+"H": {
+"number": 9,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "p2_111"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 9,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112_1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+},
+{
+"H": {
+"number": 9,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "p12_11"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[s, (s+1/2)]",
+"special": []
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 1,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p1"
+}
+}
+]
+},
+{
+"group": {
+"number": 10,
+"symbol": "c211"
+},
+"table": [
+{
+"H": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "c211"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 8,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 9,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "c121"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[s, (s+1/2)]",
+"special": []
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, odd v",
+"c": "[u,v,0]/2",
+"d": "Any p,q",
+"d_form": "[(p+q)/2,(p-q)/2,0]",
+"H": {
+"number": 1,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p1"
+}
+},
+{
+"orientation": "Even u OR even v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[(p+q)/2,(p-q)/2,0]",
+"H": {
+"number": 1,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p1"
+}
+}
+]
+},
+{
+"group": {
+"number": 11,
+"symbol": "pm11"
+},
+"table": [
+{
+"H": {
+"number": 11,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "pm11"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "s",
+"special": []
+},
+{
+"H": {
+"number": 11,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "p1m1"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pm11"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 1,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p1"
+}
+}
+]
+},
+{
+"group": {
+"number": 12,
+"symbol": "pb11"
+},
+"table": [
+{
+"H": {
+"number": 12,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "pb11"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[s, (s+1/2)]",
+"special": []
+},
+{
+"H": {
+"number": 12,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "p1a1"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pc11"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 1,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p1"
+}
+}
+]
+},
+{
+"group": {
+"number": 13,
+"symbol": "cm11"
+},
+"table": [
+{
+"H": {
+"number": 13,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "cm11"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[s, (s+1/2)]",
+"special": []
+},
+{
+"H": {
+"number": 13,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "c1m1"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pm11"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pc11"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, odd v",
+"c": "[u,v,0]/2",
+"d": "Any p,q",
+"d_form": "[(p+q)/2,(p-q)/2,0]",
+"H": {
+"number": 1,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p1"
+}
+},
+{
+"orientation": "Even u OR even v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[(p+q)/2,(p-q)/2,0]",
+"H": {
+"number": 1,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p1"
+}
+}
+]
+},
+{
+"group": {
+"number": 14,
+"symbol": "p2/m11"
+},
+"table": [
+{
+"H": {
+"number": 14,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "p2/m11"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 11,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112/m"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+},
+{
+"H": {
+"number": 14,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "p12/m1"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 6,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2/m11"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 2,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p-1"
+}
+}
+]
+},
+{
+"group": {
+"number": 15,
+"symbol": "p2_1/m11"
+},
+"table": [
+{
+"H": {
+"number": 15,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "p2_1/m11"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 12,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112_1/m"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+},
+{
+"H": {
+"number": 15,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "p12_1/m1"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 2,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p-1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pm11"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 2,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p-1"
+}
+}
+]
+},
+{
+"group": {
+"number": 16,
+"symbol": "p2/b11"
+},
+"table": [
+{
+"H": {
+"number": 16,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "p2/b11"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 2,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p-1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 8,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 16,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "p12/a1"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 7,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2/c11"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 2,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p-1"
+}
+}
+]
+},
+{
+"group": {
+"number": 17,
+"symbol": "p2_1/b11"
+},
+"table": [
+{
+"H": {
+"number": 17,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "p2_1/b11"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 2,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p-1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 9,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 17,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "p12_1/a1"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 2,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p-1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pc11"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 2,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p-1"
+}
+}
+]
+},
+{
+"group": {
+"number": 18,
+"symbol": "c2/m11"
+},
+"table": [
+{
+"H": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "c2/m11"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 11,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112/m"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 12,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p112_1/m"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "c12/m1"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 6,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2/m11"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 7,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p2/c11"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, odd v",
+"c": "[u,v,0]/2",
+"d": "Any p,q",
+"d_form": "[(p+q)/2,(p-q)/2,0]",
+"H": {
+"number": 2,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p-1"
+}
+},
+{
+"orientation": "Even u OR even v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[(p+q)/2,(p-q)/2,0]",
+"H": {
+"number": 2,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p-1"
+}
+}
+]
+},
+{
+"group": {
+"number": 19,
+"symbol": "p222"
+},
+"table": [
+{
+"H": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p222"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 13,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p222"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 20,
+"symbol": "p2_122"
+},
+"table": [
+{
+"H": {
+"number": 20,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "p2_122"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 14,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p222_1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+},
+{
+"H": {
+"number": 20,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "p22_12"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p121"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 8,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 21,
+"symbol": "p2_12_12_1"
+},
+"table": [
+{
+"H": {
+"number": 21,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p2_12_12_1"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p121"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 9,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 22,
+"symbol": "c222"
+},
+"table": [
+{
+"H": {
+"number": 22,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "c222"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 13,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p222"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 14,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p222_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, odd v",
+"c": "[u,v,0]/2",
+"d": "Any p,q",
+"d_form": "[(p+q)/2,(p-q)/2,0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+},
+{
+"orientation": "Even u OR even v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[(p+q)/2,(p-q)/2,0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 23,
+"symbol": "pmm2"
+},
+"table": [
+{
+"H": {
+"number": 23,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "pmm2"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pm2m"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 24,
+"symbol": "pma2"
+},
+"table": [
+{
+"H": {
+"number": 24,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "pma2"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pc2m"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+},
+{
+"H": {
+"number": 24,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "pbm2"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p121"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pm11"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 25,
+"symbol": "pba2"
+},
+"table": [
+{
+"H": {
+"number": 25,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "pba2"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p121"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pc11"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 26,
+"symbol": "cmm2"
+},
+"table": [
+{
+"H": {
+"number": 26,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "cmm2"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pm2m"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pc2m"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, odd v",
+"c": "[u,v,0]/2",
+"d": "Any p,q",
+"d_form": "[(p+q)/2,(p-q)/2,0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+},
+{
+"orientation": "Even u OR even v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[(p+q)/2,(p-q)/2,0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 27,
+"symbol": "pm2m"
+},
+"table": [
+{
+"H": {
+"number": 27,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "pm2m"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2mm"
+},
+"general_linear_orbit": "s",
+"special": []
+},
+{
+"H": {
+"number": 27,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "p2mm"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1m1"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 15,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pmm2"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 4,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11m"
+}
+}
+]
+},
+{
+"group": {
+"number": 28,
+"symbol": "pm2_1b"
+},
+"table": [
+{
+"H": {
+"number": 28,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "pm2_1b"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[s, (s+1/2)]",
+"special": []
+},
+{
+"H": {
+"number": 28,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "p2_1ma"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1c1"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 17,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pmc2_1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Even u, odd v",
+"c": "[u,v,0]",
+"d": "Odd p",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11a"
+}
+},
+{
+"orientation": "Odd u, any v",
+"c": "[u,v,0]",
+"d": "Even p",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "3",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11b"
+}
+},
+{
+"orientation": "Odd u, any v",
+"c": "[u,v,0]",
+"d": "Odd p",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11n"
+}
+}
+]
+},
+{
+"group": {
+"number": 29,
+"symbol": "pb2_1m"
+},
+"table": [
+{
+"H": {
+"number": 29,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "pb2_1m"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1m1"
+},
+"general_linear_orbit": "[s, (s+1/2)]",
+"special": []
+},
+{
+"H": {
+"number": 29,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "p2_1am"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1m1"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 17,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pcm2_1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 4,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11m"
+}
+}
+]
+},
+{
+"group": {
+"number": 30,
+"symbol": "pb2b"
+},
+"table": [
+{
+"H": {
+"number": 30,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "pb2b"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[s, (s+1/2)]",
+"special": []
+},
+{
+"H": {
+"number": 30,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "p2aa"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1c1"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 16,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pcc2"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Even u, odd v",
+"c": "[u,v,0]",
+"d": "Odd p",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11a"
+}
+},
+{
+"orientation": "Odd u, any v",
+"c": "[u,v,0]",
+"d": "Even p",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "3",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11b"
+}
+},
+{
+"orientation": "Odd u, any v",
+"c": "[u,v,0]",
+"d": "Odd p",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11n"
+}
+}
+]
+},
+{
+"group": {
+"number": 31,
+"symbol": "pm2a"
+},
+"table": [
+{
+"H": {
+"number": 31,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "pm2a"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2cm"
+},
+"general_linear_orbit": "s",
+"special": []
+},
+{
+"H": {
+"number": 31,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "p2mb"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 8,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pm11"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, even v",
+"c": "[u,v,0]",
+"d": "Odd q",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11a"
+}
+},
+{
+"orientation": "Any u, odd v",
+"c": "[u,v,0]",
+"d": "Even q",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "3",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11b"
+}
+},
+{
+"orientation": "Any u, odd v",
+"c": "[u,v,0]",
+"d": "Odd q",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11n"
+}
+}
+]
+},
+{
+"group": {
+"number": 32,
+"symbol": "pm2_1n"
+},
+"table": [
+{
+"H": {
+"number": 32,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "pm2_1n"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[s, (s+1/2)]",
+"special": []
+},
+{
+"H": {
+"number": 32,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "p2_1mn"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pm11"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 9,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, odd v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11a"
+}
+},
+{
+"orientation": "Even u OR even v",
+"c": "[u,v,0]",
+"d": "Odd p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "3",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11b"
+}
+},
+{
+"orientation": "Even u, odd v",
+"c": "[u,v,0]",
+"d": "Even q",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11n"
+}
+},
+{
+"orientation": "Odd u, even v",
+"c": "[u,v,0]",
+"d": "Even p",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11n"
+}
+}
+]
+},
+{
+"group": {
+"number": 33,
+"symbol": "pb2_1a"
+},
+"table": [
+{
+"H": {
+"number": 33,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "pb2_1a"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1c1"
+},
+"general_linear_orbit": "[s, (s+1/2)]",
+"special": []
+},
+{
+"H": {
+"number": 33,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "p2_1ab"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 9,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112_1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pc11"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, even v",
+"c": "[u,v,0]",
+"d": "Odd q",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11a"
+}
+},
+{
+"orientation": "Any u, odd v",
+"c": "[u,v,0]",
+"d": "Even q",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "3",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11b"
+}
+},
+{
+"orientation": "Any u, odd v",
+"c": "[u,v,0]",
+"d": "Odd q",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11n"
+}
+}
+]
+},
+{
+"group": {
+"number": 34,
+"symbol": "pb2n"
+},
+"table": [
+{
+"H": {
+"number": 34,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "pb2n"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[s, (s+1/2)]",
+"special": []
+},
+{
+"H": {
+"number": 34,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "p2an"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 8,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pc11"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, odd v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11a"
+}
+},
+{
+"orientation": "Even u OR even v",
+"c": "[u,v,0]",
+"d": "Odd p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "3",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11b"
+}
+},
+{
+"orientation": "Even u, odd v",
+"c": "[u,v,0]",
+"d": "Even q",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11n"
+}
+},
+{
+"orientation": "Odd u, even v",
+"c": "[u,v,0]",
+"d": "Even p",
+"d_form": "[pq0]",
+"H": {
+"number": 5,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11n"
+}
+}
+]
+},
+{
+"group": {
+"number": 35,
+"symbol": "cm2m"
+},
+"table": [
+{
+"H": {
+"number": 35,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "cm2m"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2mm"
+},
+"general_linear_orbit": "[s, (s+1/2)]",
+"special": []
+},
+{
+"H": {
+"number": 35,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "c2mm"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1m1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 15,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pmm2"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 17,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pcm2_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, odd v",
+"c": "[u,v,0]/2",
+"d": "Any p,q",
+"d_form": "[(p+q)/2,(p-q)/2,0]",
+"H": {
+"number": 4,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11m"
+}
+},
+{
+"orientation": "Even u OR even v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[(p+q)/2,(p-q)/2,0]",
+"H": {
+"number": 4,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11m"
+}
+}
+]
+},
+{
+"group": {
+"number": 36,
+"symbol": "cm2e"
+},
+"table": [
+{
+"H": {
+"number": 36,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "cm2e"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2cm"
+},
+"general_linear_orbit": "[s, (s+1/2)]",
+"special": []
+},
+{
+"H": {
+"number": 36,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "c2me"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1c1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 16,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pcc2"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 17,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pmc2_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, even v OR even u, odd v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[(p+q)/2,(p-q)/2,0]",
+"H": {
+"number": 5,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11a"
+}
+},
+{
+"orientation": "Odd u,v",
+"c": "[u,v,0]/2",
+"d": "Even (p +/- q)",
+"d_form": "[(p+q)/2,(p-q)/2,0]",
+"H": {
+"number": 5,
+"setting": "3",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11b"
+}
+},
+{
+"orientation": "Odd u,v",
+"c": "[u,v,0]/2",
+"d": "Odd (p +/- q)",
+"d_form": "[(p+q)/2,(p-q)/2,0]",
+"H": {
+"number": 5,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11n"
+}
+}
+]
+},
+{
+"group": {
+"number": 37,
+"symbol": "pmmm"
+},
+"table": [
+{
+"H": {
+"number": 37,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "pmmm"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2mm"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 20,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pmmm"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 6,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/m"
+}
+}
+]
+},
+{
+"group": {
+"number": 38,
+"symbol": "pmaa"
+},
+"table": [
+{
+"H": {
+"number": 38,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "pmaa"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2cm"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 21,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pccm"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+},
+{
+"H": {
+"number": 38,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "pbmb"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 6,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2/m11"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 13,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p222"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, even v",
+"c": "[u,v,0]",
+"d": "Odd q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/a"
+}
+},
+{
+"orientation": "Any u, odd v",
+"c": "[u,v,0]",
+"d": "Even q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "3",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/b"
+}
+},
+{
+"orientation": "Any u, odd v",
+"c": "[u,v,0]",
+"d": "Odd q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/n"
+}
+}
+]
+},
+{
+"group": {
+"number": 39,
+"symbol": "pban"
+},
+"table": [
+{
+"H": {
+"number": 39,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "pban"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 7,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2/c11"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 13,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p222"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, odd v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/a"
+}
+},
+{
+"orientation": "Even u OR even v",
+"c": "[u,v,0]",
+"d": "Odd p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "3",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/b"
+}
+},
+{
+"orientation": "Even u, odd v",
+"c": "[u,v,0]",
+"d": "Even q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/n"
+}
+},
+{
+"orientation": "Odd u, even v",
+"c": "[u,v,0]",
+"d": "Even p",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/n"
+}
+}
+]
+},
+{
+"group": {
+"number": 40,
+"symbol": "pmam"
+},
+"table": [
+{
+"H": {
+"number": 40,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "pmam"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 18,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p2mm"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 22,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pcmm"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+},
+{
+"H": {
+"number": 40,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "pbmm"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1m1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 6,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p12/m1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 15,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pmm2"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 6,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/m"
+}
+}
+]
+},
+{
+"group": {
+"number": 41,
+"symbol": "pmma"
+},
+"table": [
+{
+"H": {
+"number": 41,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "pmma"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2cm"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 22,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pmcm"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+},
+{
+"H": {
+"number": 41,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "pmmb"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 11,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112/m"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pm2m"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, even v",
+"c": "[u,v,0]",
+"d": "Odd q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/a"
+}
+},
+{
+"orientation": "Any u, odd v",
+"c": "[u,v,0]",
+"d": "Even q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "3",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/b"
+}
+},
+{
+"orientation": "Any u, odd v",
+"c": "[u,v,0]",
+"d": "Odd q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/n"
+}
+}
+]
+},
+{
+"group": {
+"number": 42,
+"symbol": "pman"
+},
+"table": [
+{
+"H": {
+"number": 42,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "pman"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 11,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112/m"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pc2m"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 42,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "pbmn"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 6,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2/m11"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 14,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p222_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, odd v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/a"
+}
+},
+{
+"orientation": "Even u OR even v",
+"c": "[u,v,0]",
+"d": "Odd p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "3",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/b"
+}
+},
+{
+"orientation": "Even u, odd v",
+"c": "[u,v,0]",
+"d": "Even q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/n"
+}
+},
+{
+"orientation": "Odd u, even v",
+"c": "[u,v,0]",
+"d": "Even p",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/n"
+}
+}
+]
+},
+{
+"group": {
+"number": 43,
+"symbol": "pbaa"
+},
+"table": [
+{
+"H": {
+"number": 43,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "pbaa"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1c1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 7,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p12/c1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 16,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pcc2"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 43,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "pbab"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 7,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2/c11"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 14,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p222_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, even v",
+"c": "[u,v,0]",
+"d": "Odd q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/a"
+}
+},
+{
+"orientation": "Any u, odd v",
+"c": "[u,v,0]",
+"d": "Even q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "3",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/b"
+}
+},
+{
+"orientation": "Any u, odd v",
+"c": "[u,v,0]",
+"d": "Odd q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/n"
+}
+}
+]
+},
+{
+"group": {
+"number": 44,
+"symbol": "pbam"
+},
+"table": [
+{
+"H": {
+"number": 44,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "pbam"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1m1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 6,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p12/m1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 17,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pcm2_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 6,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/m"
+}
+}
+]
+},
+{
+"group": {
+"number": 45,
+"symbol": "pbma"
+},
+"table": [
+{
+"H": {
+"number": 45,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "pbma"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1c1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 7,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p12/c1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 17,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pmc2_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 45,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "pmab"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 12,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112_1/m"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pc2m"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, even v",
+"c": "[u,v,0]",
+"d": "Odd q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/a"
+}
+},
+{
+"orientation": "Any u, odd v",
+"c": "[u,v,0]",
+"d": "Even q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "3",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/b"
+}
+},
+{
+"orientation": "Any u, odd v",
+"c": "[u,v,0]",
+"d": "Odd q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/n"
+}
+}
+]
+},
+{
+"group": {
+"number": 46,
+"symbol": "pmmn"
+},
+"table": [
+{
+"H": {
+"number": 46,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "pmmn"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 12,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112_1/m"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 18,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "bac",
+"symbol": "pm2m"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, odd v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/a"
+}
+},
+{
+"orientation": "Even u OR even v",
+"c": "[u,v,0]",
+"d": "Odd p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "3",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/b"
+}
+},
+{
+"orientation": "Even u, odd v",
+"c": "[u,v,0]",
+"d": "Even q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/n"
+}
+},
+{
+"orientation": "Odd u, even v",
+"c": "[u,v,0]",
+"d": "Even p",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/n"
+}
+}
+]
+},
+{
+"group": {
+"number": 47,
+"symbol": "cmmm"
+},
+"table": [
+{
+"H": {
+"number": 47,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "cmmm"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2mm"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 20,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pmmm"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 22,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "bac",
+"symbol": "pcmm"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, odd v",
+"c": "[u,v,0]/2",
+"d": "Any p,q",
+"d_form": "[(p+q)/2,(p-q)/2,0]",
+"H": {
+"number": 6,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/m"
+}
+},
+{
+"orientation": "Even u OR even v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[(p+q)/2,(p-q)/2,0]",
+"H": {
+"number": 6,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/m"
+}
+}
+]
+},
+{
+"group": {
+"number": 48,
+"symbol": "cmme"
+},
+"table": [
+{
+"H": {
+"number": 48,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "cmme"
+},
+"orientation": [
+[
+1,
+0,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2cm"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 21,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pccm"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 22,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "pmcm"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 48,
+"origin": [
+"1/4",
+"1/4",
+0
+],
+"setting": "1",
+"symbol": "cmme"
+},
+"orientation": [
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2cm"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 22,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pmcm"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 21,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "pccm"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, even v OR even u, odd v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[(p+q)/2,(p-q)/2,0]",
+"H": {
+"number": 7,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/a"
+}
+},
+{
+"orientation": "Odd u,v",
+"c": "[u,v,0]/2",
+"d": "Even (p +/- q)",
+"d_form": "[(p+q)/2,(p-q)/2,0]",
+"H": {
+"number": 7,
+"setting": "3",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/b"
+}
+},
+{
+"orientation": "Odd u,v",
+"c": "[u,v,0]/2",
+"d": "Odd (p +/- q)",
+"d_form": "[(p+q)/2,(p-q)/2,0]",
+"H": {
+"number": 7,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/n"
+}
+}
+]
+},
+{
+"group": {
+"number": 49,
+"symbol": "p4"
+},
+"table": [
+{
+"H": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p112"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p121"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 50,
+"symbol": "p-4"
+},
+"table": [
+{
+"H": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p112"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p121"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 51,
+"symbol": "p4/m"
+},
+"table": [
+{
+"H": {
+"number": 6,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p112/m"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+1,
+0,
+0
+]
+],
+"general": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1m1"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 6,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p12/m1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 6,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/m"
+}
+}
+]
+},
+{
+"group": {
+"number": 52,
+"symbol": "p4/n"
+},
+"table": [
+{
+"H": {
+"number": 7,
+"origin": [
+0,
+0,
+0
+],
+"setting": "2",
+"symbol": "p112/n"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 2,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p-1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 3,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "bac",
+"symbol": "p121"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 7,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p112/a"
+},
+"orientation": [
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+]
+],
+"d": [
+[
+-1,
+0,
+0
+],
+[
+1,
+0,
+0
+]
+],
+"general": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1c1"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 7,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p12/c1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, odd v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/a"
+}
+},
+{
+"orientation": "Even u OR even v",
+"c": "[u,v,0]",
+"d": "Odd p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "3",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/b"
+}
+},
+{
+"orientation": "Even u, odd v",
+"c": "[u,v,0]",
+"d": "Even q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/n"
+}
+},
+{
+"orientation": "Odd u, even v",
+"c": "[u,v,0]",
+"d": "Even p",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/n"
+}
+}
+]
+},
+{
+"group": {
+"number": 53,
+"symbol": "p422"
+},
+"table": [
+{
+"H": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p222"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 13,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p222"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+},
+{
+"H": {
+"number": 22,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "c222"
+},
+"orientation": [
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+]
+],
+"d": [
+[
+-1,
+1,
+0
+],
+[
+1,
+1,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 13,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p222"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 14,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p222_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 54,
+"symbol": "p42_12"
+},
+"table": [
+{
+"H": {
+"number": 21,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p2_12_12_1"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p121"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 9,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 22,
+"origin": [
+"1/4",
+"1/4",
+0
+],
+"setting": "1",
+"symbol": "c222"
+},
+"orientation": [
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+]
+],
+"d": [
+[
+-1,
+1,
+0
+],
+[
+1,
+1,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 14,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p222_1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 13,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p222"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 55,
+"symbol": "p4mm"
+},
+"table": [
+{
+"H": {
+"number": 23,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "pmm2"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pm2m"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+},
+{
+"H": {
+"number": 26,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "cmm2"
+},
+"orientation": [
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+]
+],
+"d": [
+[
+-1,
+1,
+0
+],
+[
+1,
+1,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pm2m"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pc2m"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 56,
+"symbol": "p4bm"
+},
+"table": [
+{
+"H": {
+"number": 25,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "pba2"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p121"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pc11"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 26,
+"origin": [
+"1/4",
+"1/4",
+0
+],
+"setting": "1",
+"symbol": "cmm2"
+},
+"orientation": [
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+]
+],
+"d": [
+[
+-1,
+1,
+0
+],
+[
+1,
+1,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pc2m"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 18,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "bac",
+"symbol": "pm2m"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 57,
+"symbol": "p-42m"
+},
+"table": [
+{
+"H": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p222"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 13,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p222"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+},
+{
+"H": {
+"number": 26,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "cmm2"
+},
+"orientation": [
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+]
+],
+"d": [
+[
+-1,
+1,
+0
+],
+[
+1,
+1,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pm2m"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pc2m"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 58,
+"symbol": "p-42_1m"
+},
+"table": [
+{
+"H": {
+"number": 21,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p2_12_12_1"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p121"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 9,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 26,
+"origin": [
+"1/4",
+"1/4",
+0
+],
+"setting": "1",
+"symbol": "cmm2"
+},
+"orientation": [
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+]
+],
+"d": [
+[
+-1,
+1,
+0
+],
+[
+1,
+1,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pc2m"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 18,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "bac",
+"symbol": "pm2m"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 59,
+"symbol": "p-4m2"
+},
+"table": [
+{
+"H": {
+"number": 23,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "pmm2"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pm2m"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+},
+{
+"H": {
+"number": 22,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "c222"
+},
+"orientation": [
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+]
+],
+"d": [
+[
+-1,
+1,
+0
+],
+[
+1,
+1,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 13,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p222"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 14,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p222_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 60,
+"symbol": "p-4b2"
+},
+"table": [
+{
+"H": {
+"number": 25,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "pba2"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p121"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pc11"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 22,
+"origin": [
+"1/4",
+"1/4",
+0
+],
+"setting": "1",
+"symbol": "c222"
+},
+"orientation": [
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+]
+],
+"d": [
+[
+-1,
+1,
+0
+],
+[
+1,
+1,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 14,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p222_1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 13,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p222"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 61,
+"symbol": "p4/mmm"
+},
+"table": [
+{
+"H": {
+"number": 37,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "pmmm"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2mm"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 20,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pmmm"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+},
+{
+"H": {
+"number": 47,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "cmmm"
+},
+"orientation": [
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+]
+],
+"d": [
+[
+-1,
+1,
+0
+],
+[
+1,
+1,
+0
+]
+],
+"general": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2mm"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 20,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pmmm"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 22,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "bac",
+"symbol": "pcmm"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 6,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/m"
+}
+}
+]
+},
+{
+"group": {
+"number": 62,
+"symbol": "p4/nbm"
+},
+"table": [
+{
+"H": {
+"number": 39,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "pban"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 7,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2/c11"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 13,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p222"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 48,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "cmme"
+},
+"orientation": [
+[
+1,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+1,
+0
+]
+],
+"general": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2cm"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 21,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pccm"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 22,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "pmcm"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 48,
+"origin": [
+"1/4",
+"1/4",
+0
+],
+"setting": "1",
+"symbol": "cmme"
+},
+"orientation": [
+[
+1,
+-1,
+0
+]
+],
+"d": [
+[
+1,
+1,
+0
+]
+],
+"general": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2cm"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 22,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pmcm"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 21,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "pccm"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, odd v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/a"
+}
+},
+{
+"orientation": "Even u OR even v",
+"c": "[u,v,0]",
+"d": "Odd p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "3",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/b"
+}
+},
+{
+"orientation": "Even u, odd v",
+"c": "[u,v,0]",
+"d": "Even q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/n"
+}
+},
+{
+"orientation": "Odd u, even v",
+"c": "[u,v,0]",
+"d": "Even p",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/n"
+}
+}
+]
+},
+{
+"group": {
+"number": 63,
+"symbol": "p4/mbm"
+},
+"table": [
+{
+"H": {
+"number": 44,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "pbam"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1m1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 6,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p12/m1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 17,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pcm2_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 47,
+"origin": [
+"1/4",
+"1/4",
+0
+],
+"setting": "1",
+"symbol": "cmmm"
+},
+"orientation": [
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+]
+],
+"d": [
+[
+-1,
+1,
+0
+],
+[
+1,
+1,
+0
+]
+],
+"general": {
+"number": 18,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p2mm"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 22,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pcmm"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 20,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "pmmm"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 6,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/m"
+}
+}
+]
+},
+{
+"group": {
+"number": 64,
+"symbol": "p4/nmm"
+},
+"table": [
+{
+"H": {
+"number": 46,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "pmmn"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 12,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112_1/m"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 18,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "bac",
+"symbol": "pm2m"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 48,
+"origin": [
+"1/4",
+"1/4",
+0
+],
+"setting": "1",
+"symbol": "cmme"
+},
+"orientation": [
+[
+1,
+1,
+0
+]
+],
+"d": [
+[
+-1,
+1,
+0
+]
+],
+"general": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2cm"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 22,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pmcm"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 21,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "pccm"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 48,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "cmme"
+},
+"orientation": [
+[
+1,
+-1,
+0
+]
+],
+"d": [
+[
+1,
+1,
+0
+]
+],
+"general": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2cm"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 21,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pccm"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 22,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "pmcm"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Odd u, odd v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/a"
+}
+},
+{
+"orientation": "Even u OR even v",
+"c": "[u,v,0]",
+"d": "Odd p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "3",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/b"
+}
+},
+{
+"orientation": "Even u, odd v",
+"c": "[u,v,0]",
+"d": "Even q",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/n"
+}
+},
+{
+"orientation": "Odd u, even v",
+"c": "[u,v,0]",
+"d": "Even p",
+"d_form": "[pq0]",
+"H": {
+"number": 7,
+"setting": "2",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/n"
+}
+}
+]
+},
+{
+"group": {
+"number": 65,
+"symbol": "p3"
+},
+"table": [
+{
+"H": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+],
+[
+1,
+2,
+0
+],
+[
+2,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "s",
+"special": []
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 1,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p1"
+}
+}
+]
+},
+{
+"group": {
+"number": 66,
+"symbol": "p-3"
+},
+"table": [
+{
+"H": {
+"number": 2,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p-1"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+],
+[
+1,
+2,
+0
+],
+[
+2,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 2,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p-1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 2,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p-1"
+}
+}
+]
+},
+{
+"group": {
+"number": 67,
+"symbol": "p312"
+},
+"table": [
+{
+"H": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "c121"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+1,
+1,
+0
+]
+],
+"d": [
+[
+1,
+2,
+0
+],
+[
+-2,
+-1,
+0
+],
+[
+-1,
+1,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[s, (s+1/2)]",
+"special": []
+},
+{
+"H": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "c211"
+},
+"orientation": [
+[
+1,
+-1,
+0
+],
+[
+1,
+2,
+0
+],
+[
+2,
+1,
+0
+]
+],
+"d": [
+[
+1,
+1,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 8,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 9,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 1,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p1"
+}
+}
+]
+},
+{
+"group": {
+"number": 68,
+"symbol": "p321"
+},
+"table": [
+{
+"H": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "c211"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+1,
+1,
+0
+]
+],
+"d": [
+[
+1,
+2,
+0
+],
+[
+-2,
+-1,
+0
+],
+[
+-1,
+1,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 8,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 9,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "c121"
+},
+"orientation": [
+[
+1,
+-1,
+0
+],
+[
+1,
+2,
+0
+],
+[
+2,
+1,
+0
+]
+],
+"d": [
+[
+1,
+1,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[s, (s+1/2)]",
+"special": []
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 1,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p1"
+}
+}
+]
+},
+{
+"group": {
+"number": 69,
+"symbol": "p3m1"
+},
+"table": [
+{
+"H": {
+"number": 13,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "cm11"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+1,
+1,
+0
+]
+],
+"d": [
+[
+1,
+2,
+0
+],
+[
+-2,
+-1,
+0
+],
+[
+-1,
+1,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[s, (s+1/2)]",
+"special": []
+},
+{
+"H": {
+"number": 13,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "c1m1"
+},
+"orientation": [
+[
+1,
+-1,
+0
+],
+[
+1,
+2,
+0
+],
+[
+2,
+1,
+0
+]
+],
+"d": [
+[
+1,
+1,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pm11"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pc11"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 1,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p1"
+}
+}
+]
+},
+{
+"group": {
+"number": 70,
+"symbol": "p31m"
+},
+"table": [
+{
+"H": {
+"number": 13,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "c1m1"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+1,
+1,
+0
+]
+],
+"d": [
+[
+1,
+2,
+0
+],
+[
+-2,
+-1,
+0
+],
+[
+-1,
+1,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pm11"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 5,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pc11"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 13,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "cm11"
+},
+"orientation": [
+[
+1,
+-1,
+0
+],
+[
+1,
+2,
+0
+],
+[
+2,
+1,
+0
+]
+],
+"d": [
+[
+1,
+1,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[s, (s+1/2)]",
+"special": []
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 1,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p1"
+}
+}
+]
+},
+{
+"group": {
+"number": 71,
+"symbol": "p-31m"
+},
+"table": [
+{
+"H": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "c12/m1"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+1,
+1,
+0
+]
+],
+"d": [
+[
+1,
+2,
+0
+],
+[
+-2,
+-1,
+0
+],
+[
+-1,
+1,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 6,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2/m11"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 7,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p2/c11"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "c2/m11"
+},
+"orientation": [
+[
+1,
+-1,
+0
+],
+[
+1,
+2,
+0
+],
+[
+2,
+1,
+0
+]
+],
+"d": [
+[
+1,
+1,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 11,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112/m"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 12,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p112_1/m"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 2,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p-1"
+}
+}
+]
+},
+{
+"group": {
+"number": 72,
+"symbol": "p-3m1"
+},
+"table": [
+{
+"H": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "c2/m11"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+1,
+1,
+0
+]
+],
+"d": [
+[
+1,
+2,
+0
+],
+[
+-2,
+-1,
+0
+],
+[
+-1,
+1,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 11,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p112/m"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 12,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p112_1/m"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "c12/m1"
+},
+"orientation": [
+[
+1,
+-1,
+0
+],
+[
+1,
+2,
+0
+],
+[
+2,
+1,
+0
+]
+],
+"d": [
+[
+1,
+1,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 6,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2/m11"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 7,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "abc",
+"symbol": "p2/c11"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 2,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p-1"
+}
+}
+]
+},
+{
+"group": {
+"number": 73,
+"symbol": "p6"
+},
+"table": [
+{
+"H": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p112"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+],
+[
+1,
+2,
+0
+],
+[
+2,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 1,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p1"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p121"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 74,
+"symbol": "p-6"
+},
+"table": [
+{
+"H": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p11m"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+],
+[
+1,
+2,
+0
+],
+[
+2,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1m1"
+},
+"general_linear_orbit": "s",
+"special": []
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 4,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11m"
+}
+}
+]
+},
+{
+"group": {
+"number": 75,
+"symbol": "p6/m"
+},
+"table": [
+{
+"H": {
+"number": 6,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "p112/m"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+],
+[
+1,
+2,
+0
+],
+[
+2,
+1,
+0
+]
+],
+"d": [
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+-1,
+0,
+0
+]
+],
+"general": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1m1"
+},
+"general_linear_orbit": "[s, -s]",
+"special": [
+{
+"rod": {
+"number": 6,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p12/m1"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "0, 1/2"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 6,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/m"
+}
+}
+]
+},
+{
+"group": {
+"number": 76,
+"symbol": "p622"
+},
+"table": [
+{
+"H": {
+"number": 22,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "c222"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+],
+[
+1,
+2,
+0
+],
+[
+2,
+1,
+0
+]
+],
+"d": [
+[
+1,
+2,
+0
+],
+[
+-2,
+-1,
+0
+],
+[
+-1,
+1,
+0
+],
+[
+1,
+1,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 3,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p211"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 13,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p222"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 14,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p222_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 77,
+"symbol": "p6mm"
+},
+"table": [
+{
+"H": {
+"number": 26,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "cmm2"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+],
+[
+1,
+2,
+0
+],
+[
+2,
+1,
+0
+]
+],
+"d": [
+[
+1,
+2,
+0
+],
+[
+-2,
+-1,
+0
+],
+[
+-1,
+1,
+0
+],
+[
+1,
+1,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 10,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p11m"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pm2m"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 19,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pc2m"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 3,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112"
+}
+}
+]
+},
+{
+"group": {
+"number": 78,
+"symbol": "p-6m2"
+},
+"table": [
+{
+"H": {
+"number": 35,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "cm2m"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+1,
+1,
+0
+]
+],
+"d": [
+[
+1,
+2,
+0
+],
+[
+-2,
+-1,
+0
+],
+[
+-1,
+1,
+0
+]
+],
+"general": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2mm"
+},
+"general_linear_orbit": "[s, (s+1/2)]",
+"special": []
+},
+{
+"H": {
+"number": 35,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "c2mm"
+},
+"orientation": [
+[
+1,
+-1,
+0
+],
+[
+1,
+2,
+0
+],
+[
+2,
+1,
+0
+]
+],
+"d": [
+[
+1,
+1,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1m1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 15,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pmm2"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 17,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pcm2_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 4,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11m"
+}
+}
+]
+},
+{
+"group": {
+"number": 79,
+"symbol": "p-62m"
+},
+"table": [
+{
+"H": {
+"number": 35,
+"origin": [
+0,
+0,
+0
+],
+"setting": "b",
+"symbol": "c2mm"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+1,
+1,
+0
+]
+],
+"d": [
+[
+1,
+2,
+0
+],
+[
+-2,
+-1,
+0
+],
+[
+-1,
+1,
+0
+]
+],
+"general": {
+"number": 4,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "p1m1"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 15,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pmm2"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 17,
+"origin": [
+0,
+0,
+0
+],
+"setting": "bac",
+"symbol": "pcm2_1"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+},
+{
+"H": {
+"number": 35,
+"origin": [
+0,
+0,
+0
+],
+"setting": "a",
+"symbol": "cm2m"
+},
+"orientation": [
+[
+1,
+-1,
+0
+],
+[
+1,
+2,
+0
+],
+[
+2,
+1,
+0
+]
+],
+"d": [
+[
+1,
+1,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2mm"
+},
+"general_linear_orbit": "[s, (s+1/2)]",
+"special": []
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 4,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p11m"
+}
+}
+]
+},
+{
+"group": {
+"number": 80,
+"symbol": "p6/mmm"
+},
+"table": [
+{
+"H": {
+"number": 47,
+"origin": [
+0,
+0,
+0
+],
+"setting": "1",
+"symbol": "cmmm"
+},
+"orientation": [
+[
+1,
+0,
+0
+],
+[
+0,
+1,
+0
+],
+[
+1,
+1,
+0
+],
+[
+1,
+-1,
+0
+],
+[
+1,
+2,
+0
+],
+[
+2,
+1,
+0
+]
+],
+"d": [
+[
+1,
+2,
+0
+],
+[
+-2,
+-1,
+0
+],
+[
+-1,
+1,
+0
+],
+[
+1,
+1,
+0
+],
+[
+-1,
+0,
+0
+],
+[
+0,
+1,
+0
+]
+],
+"general": {
+"number": 18,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "p2mm"
+},
+"general_linear_orbit": "[+/- s, (1/2 +/- s)]",
+"special": [
+{
+"rod": {
+"number": 20,
+"origin": [
+0,
+0,
+0
+],
+"setting": "abc",
+"symbol": "pmmm"
+},
+"s": [
+0,
+"1/2"
+],
+"linear_orbit": "[0, 1/2]"
+},
+{
+"rod": {
+"number": 22,
+"origin": [
+0,
+0,
+"1/4"
+],
+"setting": "bac",
+"symbol": "pcmm"
+},
+"s": [
+"1/4",
+"3/4"
+],
+"linear_orbit": "[1/4, 3/4]"
+}
+]
+}
+],
+"auxiliary": [
+{
+"orientation": "Any u,v",
+"c": "[u,v,0]",
+"d": "Any p,q",
+"d_form": "[pq0]",
+"H": {
+"number": 6,
+"setting": "1",
+"origin": [
+0,
+0,
+0
+],
+"symbol": "p112/m"
+}
+}
+]
+}
+]
