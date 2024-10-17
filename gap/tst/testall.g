@@ -1,3 +1,5 @@
+#!/usr/bin/env gap
+
 alltests := DirectoryCurrent();
 
 TestDirectory( alltests,
