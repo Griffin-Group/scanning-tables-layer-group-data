@@ -1,5 +1,7 @@
 # Data for 'Scanning tables for the layer groups'
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13948518.svg)](https://doi.org/10.5281/zenodo.13948518)
+
 This repository contains the data and code for the paper "Scanning tables for the layer groups" by Bernard Field and Sinéad M. Griffin.
 If you use the data or code in a publication, please cite:
 
