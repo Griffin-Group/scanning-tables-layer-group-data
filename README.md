@@ -5,7 +5,7 @@
 This repository contains the data and code for the paper "Scanning tables for the layer groups" by Bernard Field and Sinéad M. Griffin.
 If you use the data or code in a publication, please cite:
 
-Bernard Field, Sinéad M. Griffin, "Scanning tables for the layer groups", in preparation (2024).
+Bernard Field, Sinéad M. Griffin, "Scanning tables for the layer groups", arXiv:2410.18750 (2024).
 
 ## Layout
 
