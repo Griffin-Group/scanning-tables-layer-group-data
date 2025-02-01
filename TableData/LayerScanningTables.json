@@ -536,7 +536,7 @@
       "special" : [ {
               "length" : 1,
               "number" : 14,
-              "origin" : [ 0, 0, 0 ],
+              "origin" : [ 0, 0, "1/4" ],
               "s" : [ 0, "1/2" ],
               "setting" : "abc" } ] }, {
       "H" : 20,
@@ -692,7 +692,7 @@
               "setting" : "bac" }, {
               "length" : 1,
               "number" : 19,
-              "origin" : [ 0, 0, 0 ],
+              "origin" : [ 0, 0, "1/4" ],
               "s" : [ "1/4", "3/4" ],
               "setting" : "bac" } ] } ],
 [ {
@@ -1008,7 +1008,7 @@
       "d" : [ [ 0, 1, 0 ] ],
       "general" : 19,
       "general_length" : 1,
-      "general_origin" : [ 0, 0, 0 ],
+      "general_origin" : [ 0, 0, "1/4" ],
       "general_setting" : "abc",
       "orientation" : [ [ 1, 0, 0 ] ],
       "special" : [ {
@@ -1148,7 +1148,7 @@
               "setting" : "abc" }, {
               "length" : 1,
               "number" : 19,
-              "origin" : [ 0, 0, 0 ],
+              "origin" : [ 0, 0, "1/4" ],
               "s" : [ "1/4", "3/4" ],
               "setting" : "bac" } ] }, {
       "H" : 42,
@@ -1209,7 +1209,7 @@
               "setting" : "abc" }, {
               "length" : 1,
               "number" : 14,
-              "origin" : [ 0, 0, 0 ],
+              "origin" : [ 0, 0, "1/4" ],
               "s" : [ "1/4", "3/4" ],
               "setting" : "abc" } ] } ],
 [ {
@@ -1323,7 +1323,7 @@
       "d" : [ [ 0, 1, 0 ] ],
       "general" : 19,
       "general_length" : 1,
-      "general_origin" : [ 0, 0, 0 ],
+      "general_origin" : [ 0, 0, "1/4" ],
       "general_setting" : "abc",
       "orientation" : [ [ 1, 0, 0 ] ],
       "special" : [ {
@@ -1510,7 +1510,7 @@
       "special" : [ {
               "length" : 1,
               "number" : 14,
-              "origin" : [ 0, 0, 0 ],
+              "origin" : [ 0, 0, "1/4" ],
               "s" : [ 0, "1/2" ],
               "setting" : "abc" }, {
               "length" : 1,
@@ -1551,7 +1551,7 @@
               "setting" : "bac" }, {
               "length" : 1,
               "number" : 19,
-              "origin" : [ 0, 0, 0 ],
+              "origin" : [ 0, 0, "1/4" ],
               "s" : [ "1/4", "3/4" ],
               "setting" : "bac" } ] } ],
 [ {
@@ -1628,7 +1628,7 @@
               "setting" : "bac" }, {
               "length" : 1,
               "number" : 19,
-              "origin" : [ 0, 0, 0 ],
+              "origin" : [ 0, 0, "1/4" ],
               "s" : [ "1/4", "3/4" ],
               "setting" : "bac" } ] } ],
 [ {
@@ -1741,7 +1741,7 @@
       "special" : [ {
               "length" : 1,
               "number" : 14,
-              "origin" : [ 0, 0, 0 ],
+              "origin" : [ 0, 0, "1/4" ],
               "s" : [ 0, "1/2" ],
               "setting" : "abc" }, {
               "length" : 1,
@@ -1812,7 +1812,7 @@
       "d" : [ [ -1, 1, 0 ] ],
       "general" : 19,
       "general_length" : 1,
-      "general_origin" : [ 0, 0, 0 ],
+      "general_origin" : [ 0, 0, "1/4" ],
       "general_setting" : "abc",
       "orientation" : [ [ 1, 1, 0 ] ],
       "special" : [ {
@@ -1934,7 +1934,7 @@
       "d" : [ [ 1, 1, 0 ] ],
       "general" : 19,
       "general_length" : 1,
-      "general_origin" : [ 0, 0, 0 ],
+      "general_origin" : [ 0, 0, "1/4" ],
       "general_setting" : "abc",
       "orientation" : [ [ 1, -1, 0 ] ],
       "special" : [ {
@@ -2263,7 +2263,7 @@
               "setting" : "bac" }, {
               "length" : 1,
               "number" : 19,
-              "origin" : [ 0, 0, 0 ],
+              "origin" : [ 0, 0, "1/4" ],
               "s" : [ "1/4", "3/4" ],
               "setting" : "bac" } ] } ],
 [ {

@@ -64,3 +64,10 @@ def layernumber_to_HM(i:int, setting:str="1", tex:bool=True) -> str:
         return texify_layer_HM(name)
     else:
         return name
+
+def is_standard_setting(setting:str) -> bool:
+    """
+    Is the setting a standard setting (1, a, abc)
+    (I ignore the ones with multiple origin choices because those are captured separately.)
+    """
+    return (setting == "abc" or setting == "1" or setting == "a")

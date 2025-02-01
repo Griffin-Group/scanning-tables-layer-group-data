@@ -14,7 +14,7 @@ def load_json(fname):
     with open(fname, 'r') as f:
         return json.load(f)
 
-def scanning_tables_condensed(table:list, aux:list) -> (list,list):
+def scanning_tables_condensed(table:list, aux:list) -> tuple[list,list]:
     """
     Get data from LayerScanningTables.json and ObliqueScanning.json
     Return condensed form showing allowed scanning groups and rod groups.
@@ -144,6 +144,67 @@ def scanning_flow_H_to_rod(table:tuple) -> list:
             data[orient["H"]-1].update(data[aux_group-1])
     return data
 
+def scanning_class_flow_layer_to_H(table:tuple) -> list[set[int]]:
+    """
+    From (scanning table,oblique scanning), get links from each class of
+    scanned group to class of scanning group.
+
+    1: Oblique/Triclinic (L1-L2)
+    2: Oblique/monoclinic (L3-L7)
+    3: Rectangular/monoclinic (L8-L18)
+    4: Rectangular/orthorhombic (L19-L48)
+    5: Square/tetragonal (L49-L64)
+    6: Hexagonal/trigonal (L65-L72)
+    7: Hexagonal/hexagonal (L73-L80)
+
+    List of sets, [{1,2,3,...},...]
+    where index is layer group of layer (0-based) and entries of sets are
+    scanning group (1-based).
+    """
+    # Get the granular data at the layer group level.
+    flow_layers = scanning_flow_layer_to_H(table)
+    # Mapping from individual layer groups to crystal classes.
+    layer_to_class = [0]*2 + [1]*5 + [2]*11 + [3]*30 + [4]*16 + [5]*8 + [6]*8
+    # Initialise empty data.
+    data = [set() for _ in range(7)]
+    for i, layer in enumerate(flow_layers):
+        for entry in layer:
+            # We want things 1-indexed, so must do some conversions.
+            data[layer_to_class[i]].add(layer_to_class[entry-1]+1)
+    return data
+
+def scanning_class_flow_layer_to_rod(table) -> list[set[int]]:
+    # Get the granular data at the layer group level.
+    flow_layers = scanning_flow_layer_to_rod(table)
+    # Mapping from individual layer groups to crystal classes.
+    layer_to_class = [0]*2 + [1]*5 + [2]*11 + [3]*30 + [4]*16 + [5]*8 + [6]*8
+    # And rod groups to crystal classes
+    # Triclinic, Monoclinic/Oblique, Monoclinic/Rectangular, Orthorhombic
+    rod_to_class = [0]*2 + [1]*5 + [2]*5 + [3]*10
+    # Initialise empty data.
+    data = [set() for _ in range(7)]
+    for i, layer in enumerate(flow_layers):
+        for entry in layer:
+            # We want things 1-indexed, so must do some conversions.
+            data[layer_to_class[i]].add(rod_to_class[entry-1]+1)
+    return data
+
+def scanning_class_flow_H_to_rod(table) -> list[set[int]]:
+    # Get the granular data at the layer group level.
+    flow_layers = scanning_flow_H_to_rod(table)
+    # Mapping from individual layer groups to crystal classes.
+    layer_to_class = [0]*2 + [1]*5 + [2]*11 + [3]*30 + [4]*16 + [5]*8 + [6]*8
+    # And rod groups to crystal classes
+    # Triclinic, Monoclinic/Oblique, Monoclinic/Rectangular, Orthorhombic
+    rod_to_class = [0]*2 + [1]*5 + [2]*5 + [3]*10
+    # Initialise empty data.
+    data = [set() for _ in range(7)]
+    for i, layer in enumerate(flow_layers):
+        for entry in layer:
+            # We want things 1-indexed, so must do some conversions.
+            data[layer_to_class[i]].add(rod_to_class[entry-1]+1)
+    return data
+
 def invert_flow(func):
     """
     Wrapper which inverts a list of sets indicating links
@@ -162,7 +223,7 @@ def invert_flow(func):
     return inverted_flow
 
 def generic_sankey(table, columns:list, norm:str, column_flow_functions,
-                   column_colors):
+                   column_colors, show=True, labels=None) -> go.Figure:
     # Sort columns
     columns = columns.copy()
     columns.sort()
@@ -237,9 +298,10 @@ def generic_sankey(table, columns:list, norm:str, column_flow_functions,
     for c in columns:
         colors += column_colors[c].copy()
     # Label
-    labels = []
-    for c in columns:
-        labels += [str(i) for i in range(1,column_lengths[c]+1)]
+    if labels is None:
+        labels = []
+        for c in columns:
+            labels += [str(i) for i in range(1,column_lengths[c]+1)]
     # Coordinates for plotting
     # They are figure coords, so between 0 and 1.
     # https://stackoverflow.com/questions/72749062/how-to-set-order-of-the-nodes-in-sankey-diagram-plotly says coords get buggy if exactly 0 or 1.
@@ -284,7 +346,9 @@ def generic_sankey(table, columns:list, norm:str, column_flow_functions,
             value = value,
             color = link_colors,
         ))])
-    fig.show()
+    if show:
+        fig.show()
+    return fig
 
 def layer_sankey(table:list, aux_table:list, columns:list=[0,1,2], norm:str="path"):
     """
@@ -300,6 +364,53 @@ def layer_sankey(table:list, aux_table:list, columns:list=[0,1,2], norm:str="pat
             ]
     column_colors = [layer_colors, layer_colors[0:48], rod_colors]
     generic_sankey((table, aux_table), columns, norm, column_flow_functions, column_colors)
+
+def layer_class_sankey(table:list, aux_table:list, columns:list=[0,1,2],
+                       norm:str="column", filename=None, width=330, height=None,
+                       scale=1, font_family="Arial"):
+    column_flow_functions = [
+            [None, scanning_class_flow_layer_to_H, scanning_class_flow_layer_to_rod],
+            [invert_flow(scanning_class_flow_layer_to_H), None, scanning_class_flow_H_to_rod],
+            [invert_flow(scanning_class_flow_layer_to_rod), invert_flow(scanning_class_flow_H_to_rod), None]
+            ]
+    column_colors = [class_colors.copy(), class_colors[0:4], class_colors[0:4]]
+    for c in column_colors:
+        c[0] = "#d1dde6" # Replace dark navy with light grey (fog), so I can still read the labels.
+    labels = ["Oblique/Triclinic","Oblique/Monoclinic","Rectangular/Monoclinic","Rectangular/Orthorhombic","Square/Tetragonal","Hexagonal/Trigonal","Hexagonal/Hexagonal"]
+    labels += labels[0:4]
+    labels[-1] = "Rectangular/<br>Orthorhombic"
+    labels += ["Triclinic","Monoclinic/Oblique", "Monoclinic<br>/Rectangular","Orthorhombic"]
+    if norm == "column":
+        labels[-3] = "Monoclinic<br>/Oblique"
+        labels[-6] = "Rectangular/<br>Monoclinic"
+    fig = generic_sankey((table, aux_table), columns, norm, column_flow_functions, column_colors, show=False, labels=labels)
+    # Decorate with column labels
+    headers = ["Scanned group", "Scanning group", "Penetration<br>rod group"]
+    annotations = []
+    for i,c in enumerate(columns):
+        annotations.append(dict(
+            x=i/(len(columns)-1),
+            y=1.12,
+            xref="x domain",
+            yref="paper",
+            text=headers[c],
+            showarrow=False,
+            font=dict(size=10),
+            ))
+    fig.update_layout(annotations=annotations)
+    # Hide the text shadow because it is ugly in PDF rendering.
+    # It does no change when "none", but anything else makes the shadow go away.
+    fig.update_traces(textfont_shadow="thisisinvalidsonoshadowappears")
+    # Fix layout for saving.
+    fig.update_layout(margin=dict(b=10,l=10,r=10,t=40), plot_bgcolor='#fff',
+                      font=dict(size=10,color='#000',family=font_family))
+    # Save
+    # Plotly measures all distances in pixels.
+    # According to my outputs and Preview, 100 px = 26.5 mm = 1.043 in.
+    if filename:
+        fig.write_image(filename, width=width, height=height, scale=scale)
+    # Output
+    fig.show()
 
 def bar_chart(table, flow_function, name:str, column_colors:list,
               xlabel:str=None, width:float=330, height:float=200,
@@ -440,7 +551,7 @@ def main(print_stats:bool=True, include_H:bool=True, norm:str="path",
         bar_chart((scanning_table,oblique_scanning),
                   invert_flow(scanning_flow_layer_to_rod),
                   "scanning_rod_bars.pdf", rod_colors,
-                  xlabel="Sectional rod group (rod IT number)")
+                  xlabel="Penetration rod group (rod IT number)")
     if stacked_bars:
         legend_colors = class_colors
         legend_names = ['Oblique/Triclinic', 'Oblique/Monoclinic', 'Rectangular/Monoclinic',
@@ -451,6 +562,7 @@ def main(print_stats:bool=True, include_H:bool=True, norm:str="path",
                   invert_flow(scanning_flow_layer_to_H),
                   "scanning_H_stacked_bars.pdf", layer_type_colors,
                   xlabel="Scanning group (layer IT number)",
+                  ylabel="Number of scanned groups",
                   legend_colors=legend_colors, legend_names=legend_names,
                   font_family=font)
         if font=="Times":
@@ -460,7 +572,8 @@ def main(print_stats:bool=True, include_H:bool=True, norm:str="path",
         stacked_bar_chart_with_legend((scanning_table,oblique_scanning),
                   invert_flow(scanning_flow_layer_to_rod),
                   "scanning_rod_stacked_bars.pdf", layer_type_colors,
-                  xlabel="Sectional rod group (rod IT number)",
+                  xlabel="Penetration rod group (rod IT number)",
+                  ylabel="Number of scanned groups",
                   legend_colors=legend_colors, legend_names=legend_names,
                   height=height, font_family=font)
     if include_H:

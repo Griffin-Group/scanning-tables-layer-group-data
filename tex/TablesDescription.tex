@@ -1,0 +1,114 @@
+\section{Scanning tables for the layer groups}
+
+Herein we present tables listing the symmetry groups (penetration rod groups) which preserve lines penetrating through each layer group.
+These tables scan through all possible locations and (in-plane rational) directions of the penetration lines, so are called scanning tables.
+
+A machine-readable version of these tables, along with the source code and underlying data, is available at \cite{field_griffingroupscanning-tables-layer-group-data_2024}.
+
+Each layer group has two tables with similar formats: one for high-symmetry directions, and one for oblique directions (an auxiliary table).
+The elements of the tables are described below.
+
+\subsection{Elements of the tables}
+
+\subsubsection{Header}
+
+Set above each table is the header.
+It gives the Hermann-Mauguin (HM) symbol and the International Tables (IT) number of the layer group that is being scanned (the ``scanned group'').
+The scanned group is always in its standard, default setting, as defined by the \textit{International Tables for Crystallography} volume E (\cite{kopsky_international_2010}).
+Layer groups L52, L62, and L64 have the standard origin on the inversion centre (origin choice ``2'') rather than the 4-fold axis.
+
+\subsubsection{Penetration direction}
+
+The first column is the penetration direction.
+It is the direction of the line penetrating through the rod group.
+It is given by the integer indices $[uv0]$ and defines the basis vector $\mathbf{c}$, which will define the translation basis of the penetration rod group.
+
+For the auxiliary tables, the penetration direction is grouped by whether $u$ and/or $v$ are odd or even.
+$u$ and $v$ must also be co-prime, to ensure $\mathbf{c}$ is a primitive lattice vector.
+Auxiliary tables of centred layer groups also add an extra column specifying whether the primitive basis vector $\mathbf{c}$ is $[u,v,0]$ or $[u/2,v/2,0]$ for a given choice of $u$ and $v$ (otherwise, it is assumed that $\mathbf{c}=[u,v,0]$).
+
+
+\subsubsection{Scanning direction}
+
+The second column is the scanning direction, given by the scanning vector $\mathbf{d}$.
+Each scanning direction is paired with a penetration direction.
+The primary role of $\mathbf{d}$ is to define the location of the penetration line, but it is also used to form a coordinate basis.
+The scanning vector $\mathbf{d}$ is chosen such that $\mathbf{c}$ and $\mathbf{d}$ form a right-handed conventional basis for the scanning group.
+
+For the auxiliary tables, the scanning direction is given by the integer indices $[pq0]$, with specified constraints on $p$ and $q$.
+A conventional right-handed basis is ensured by solving for $(\mathbf{c}\times\mathbf{d})\cdot[001]=1$, and choosing $p,q$ to be co-prime.
+For centred groups, $\mathbf{d}=[p/2,q/2,0]$ instead, with $(\mathbf{c}\times\mathbf{d})\cdot[001]=1/2$ ensuring a conventional basis.
+
+
+\subsubsection{Scanning group}
+
+The third column is the scanning group.
+The scanning group is the maximal subgroup of the scanned group whose point group preserves the penetration direction.
+By the scanning theorem (\cite{kopsky_scanning_1989}), the scanning table (specifically, the location and penetration rod group columns) of the scanned group along a particular direction is identical to the scanning table of the scanning group with the same setting and origin choice.
+
+Each scanning group applies to all entries in the same row of the table, bounded by horizontal lines.
+This may include multiple penetration directions and multiple locations.
+
+The scanning group is a layer group.
+Its HM symbol and IT number (prefixed by L for layer group) are given.
+The basis is $(\mathbf{c},\mathbf{d},\mathbf{z})$, where $\mathbf{z}=[001]$ is an out-of-plane vector.
+If the scanning group is not in the default setting, the IT number is marked by a prime as a convenience for the reader.
+If the origin is not the conventional origin, then the position of the origin relative to the conventional origin is given in square brackets, in units of the scanning group basis.
+
+\subsubsection{Location}
+
+The fourth column is the location of the penetration line.
+For points given by $P+s\mathbf{d}$, where $P$ is the scanned group origin, it gives a set of values $s$ in the unit interval $[0,1)$, with each row giving different penetration rod groups.
+
+The first rows are special locations, with discrete values of $s$.
+The last row for each scanning group is the general location, which is all values of $s$ not in a special location.
+
+Locations are grouped using square brackets into orbits, that is, points which are the same under the operation of the scanning group.
+If two values of $s$ are not bound by square brackets, then they are not in the same orbit.
+
+\subsubsection{Penetration rod group}
+
+The fifth column presents the penetration rod group for the given penetration line(s) specified by the location(s) and penetration direction(s).
+
+The HM symbol and IT number (prefixed by R for rod group) are given.
+If the rod group is not in the default setting, the IT number is marked by a prime as a convenience for the reader.
+If the origin is not the conventional origin, then the position of the origin relative to the conventional origin in units of $\mathbf{c}$ is given in square brackets.
+
+The sectional rod group is given in the basis $(\mathbf{d},\mathbf{z},\mathbf{c})$ with an origin $P+s\mathbf{d}$, where $P$ is the standard origin of the scanned group.
+Note that, due to conventions for rod and layer groups, this is a different order of basis vectors to the scanning group.
+
+The specific penetration rod group in the original basis is readily reconstructed from the rod group in the default basis and the information in the table using the transformation $Q g Q^{-1}$ for each element $g$ of the group in standard basis.
+If the rod group is in its default setting, then the transformation matrix is
+\begin{equation}
+	Q = \left(\mathbf{d}\ \mathbf{z}\ \mathbf{c} | s\mathbf{d} + t\mathbf{c}\right),
+\end{equation}
+where $(A|\mathbf{b})$ is an affine transformation $y = Ax + \mathbf{b}$ and $t$ is the origin shift given in the table.
+If the group is not in its default setting, then the transformation matrix is instead
+\begin{equation}
+	Q = \left(\mathbf{z}\ {-\mathbf{d}}\ \mathbf{c} | s\mathbf{d} + t\mathbf{c}\right).
+\end{equation}
+
+
+\begin{thebibliography}{23}
+	\baselineskip=9pt\parskip=0pt
+	
+	\harvarditem{Field}{2024}{field_griffingroupscanning-tables-layer-group-data_2024}
+	Field, B.  \harvardyearleft 2024\harvardyearright{}.
+	\newblock {GriffinGroup}/scanning-tables-layer-group-data.
+	\newline\harvardurl{https://doi.org/10.5281/zenodo.13948517}
+	
+	\harvarditem{Kopsk\'{y} \harvardand\ Litvin}{2010}{kopsky_international_2010}
+	Kopsk\'{y}, V. \harvardand\ Litvin, D.~B. (eds.)  \harvardyearleft
+	2010\harvardyearright{}.
+	\newblock \emph{International {Tables} for {Crystallography}: {Subperiodic}
+		groups}, vol.~E.
+	\newblock Chester, England: International Union of Crystallography, 2nd ed.
+	\newline\harvardurl{https://doi.org/10.1107/97809553602060000109}
+	
+	\harvarditem{Kopsk\'{y} \harvardand\ Litvin}{1989}{kopsky_scanning_1989}
+	Kopsk\'{y}, V. \harvardand\ Litvin, D.~B.  \harvardyearleft
+	1989\harvardyearright{}.
+	\newblock In \emph{Group theoretical methods in physics}, edited by
+	Y.~Saint-Aubin \harvardand\ L.~Vinet, pp. 263--266. Singapore: World
+	Scientific.
+\end{thebibliography}

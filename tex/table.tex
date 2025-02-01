@@ -1,19 +1,31 @@
 % !TeX TS-program = lualatex
 \documentclass{article}
 
+\usepackage[margin=1.5in]{geometry}
+
 \usepackage{amsmath}
 \usepackage{fontspec}
 \usepackage{unicode-math}
+\usepackage{natbib}
+\renewcommand{\harvardurl}{\relax} % From inspection of iucr.cls
 
 \setmathfont{TeX Gyre Termes Math}
 
+\renewcommand{\thesection}{}
+\renewcommand{\thesubsection}{}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}}
+
 \begin{document}
 	\begin{center}
-		{\Large Scanning tables for the layer groups}
+		{\Large Symmetries of all lines in monolayer crystals}
 		
 		{\large Supplementary information}
 		
 		Bernard Field, Sin\'ead M. Griffin
 	\end{center}
-	\input{../TableData/LayerScanningTables.tex}
+	\input{TablesDescription.tex}
+	
+	\clearpage
+	
+	\input{LayerScanningTables.tex}
 \end{document}

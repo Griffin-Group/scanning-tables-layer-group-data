@@ -4,9 +4,9 @@
 import warnings
 import json
 
-from hermann_mauguin import rodnumber_to_HM, layernumber_to_HM, texify_rod_HM, texify_layer_HM
+from hermann_mauguin import rodnumber_to_HM, layernumber_to_HM, texify_rod_HM, texify_layer_HM, is_standard_setting
 from load_json import load_json
-from auxiliary_tables import aux_table_json, aux_table_json2tex
+from auxiliary_tables import aux_table_json, aux_table_json2tex, expand_aux_table_json, aux_table_json2tex_long
 
 all_orbits = load_json('Orbits.json')
 
@@ -24,13 +24,15 @@ def process_single_layer_json(original_table:list, layer_num:int) -> dict:
                  origin=original_scan['H_origin'],
                  setting=original_scan['H_setting'])
         H['symbol'] = layernumber_to_HM(H['number'], H['setting'], tex=False)
+        H['standard_setting'] = is_standard_setting(H['setting'])
         new_scan['H'] = H
         new_scan['orientation'] = original_scan['orientation']
         new_scan['d'] = original_scan['d']
         new_scan['general'] = dict(number=original_scan['general'],
                                    origin=original_scan['general_origin'],
                                    setting=original_scan['general_setting'],
-                                   symbol=rodnumber_to_HM(original_scan['general'],original_scan['general_setting'],tex=False))
+                                   symbol=rodnumber_to_HM(original_scan['general'],original_scan['general_setting'],tex=False),
+                                   standard_setting=is_standard_setting(original_scan['general_setting']))
         new_scan['general_linear_orbit'] = process_general_s(H['number'], H['setting'], H['origin'], tex=False)
         # Do special positions
         new_scan['special'] = []
@@ -39,7 +41,8 @@ def process_single_layer_json(original_table:list, layer_num:int) -> dict:
             spec['rod'] = dict(number=original_spec['number'],
                                origin=original_spec['origin'],
                                setting=original_spec['setting'],
-                               symbol=rodnumber_to_HM(original_spec['number'], original_spec['setting'], tex=False))
+                               symbol=rodnumber_to_HM(original_spec['number'], original_spec['setting'], tex=False),
+                               standard_setting=is_standard_setting(original_spec['setting']))
             spec['s'] = original_spec['s']
             spec['linear_orbit'] = process_spec_s(spec['s'], H['number'], H['setting'], H['origin'])
             new_scan['special'].append(spec)
@@ -57,6 +60,9 @@ def process_layer_json(original_data:list) -> list:
     processed = []
     for layer_num, original_table in enumerate(original_data):
         processed.append(process_single_layer_json(original_table, layer_num))
+    # Add the expanded auxiliary table information
+    for row in processed:
+        expand_aux_table_json(row['auxiliary'], processed)
     return processed
 
 
@@ -68,15 +74,15 @@ def format_orientation(v:list) -> str:
         return '\\ensuremath{{[{}{}{}]}}'.format(*v).replace('-',r'\bar')
 
 
-def write_table(f, layer:list, layer_num:int, do_auxiliary:bool=False):
+def write_table(f, layer:list, layer_num:int, do_auxiliary:bool=False, long_aux:bool=False):
     """
     Writes the scanning table for layer (with 1-based number layer_num) to file f in LaTeX
     From unprocessed JSON.
     """
     write_table_from_processed_json(f, process_single_layer_json(layer, layer_num),
-                                    do_auxiliary=do_auxiliary)
+                                    do_auxiliary=do_auxiliary, long_aux=long_aux)
 
-def write_table_from_processed_json(f, layer:dict, do_auxiliary:bool=True):
+def write_table_from_processed_json(f, layer:dict, do_auxiliary:bool=True, long_aux:bool=False):
     """
     Writes the scanning table for layer to file f in LaTeX
     Uses the format of process_layer_json.
@@ -87,9 +93,9 @@ def write_table_from_processed_json(f, layer:dict, do_auxiliary:bool=True):
     f.write('\n'.join([r"\begin{tabular}{|c|c|c|c|c|}",
             r"\hline",
             r"\rule{0pt}{1.1em}\unskip",
-            r"Orientation & Scanning & Scanning & Location & Sectional \\",
-            r"$[uvw]="+cvec+r"$ & direction $\mathbf{d}$ & group & $s\mathbf{d}$ & rod group \\",
-            r" & & $("+cvec+r",\mathbf{d},\mathbf{z})$ & & $(\mathbf{d},\mathbf{z},"+cvec+r")$ \\"
+            r"Penetration & Scanning & Scanning & Location & Penetration \\",
+            r"direction & direction $\mathbf{d}$ & group & $s\mathbf{d}$ & rod group \\",
+            r"$[uv0]="+cvec+r"$ & & $("+cvec+r",\mathbf{d},\mathbf{z})$ & & $(\mathbf{d},\mathbf{z},"+cvec+r")$ \\"
             r"\hline"]) + '\n')
     for group in layer['table']:
         # Go over each set of distinct symmetries
@@ -115,7 +121,7 @@ def write_table_from_processed_json(f, layer:dict, do_auxiliary:bool=True):
                 f.write(" & & ")
             if not done_scanning_group:
                 if not do_scanning_group_origin:
-                    line = texify_layer_HM(group["H"]["symbol"]) + r" \hfill L" + str(group["H"]["number"]) + " & "
+                    line = texify_layer_HM(group["H"]["symbol"]) + r" \hfill L" + str(group["H"]["number"]) + ("" if group["H"]["standard_setting"] else r"$^\prime$") + " & "
                     if group["H"]["origin"] != [0,0,0]:
                         do_scanning_group_origin = True
                     else:
@@ -134,6 +140,8 @@ def write_table_from_processed_json(f, layer:dict, do_auxiliary:bool=True):
                     # Get the origin shift (which is along c'), without quotes.
                     line += r" $[" + str(spec["rod"]["origin"][2]).replace("'","") + "]$"
                 line += r" \hfill R" + str(spec["rod"]["number"])
+                if not spec["rod"]["standard_setting"]:
+                    line += r"$^\prime$" # Prime if not standard setting.
                 idx_special += 1
             elif not done_general:
                 # TeXify the general linear orbit
@@ -143,6 +151,8 @@ def write_table_from_processed_json(f, layer:dict, do_auxiliary:bool=True):
                     # Get the origin shift (which is along c'), without quotes.
                     line += r" $[" + str(group["general"]["origin"][2]).replace("'","") + "]$"
                 line += r" \hfill R" + str(group["general"]["number"])
+                if not group["general"]["standard_setting"]:
+                    line += r"$^\prime$" # Prime if not standard setting.
                 done_general = True
             else:
                 line = r" & "
@@ -152,7 +162,10 @@ def write_table_from_processed_json(f, layer:dict, do_auxiliary:bool=True):
     f.write(r"\end{tabular}"+"\n")
     if do_auxiliary:
         f.write(r"\nopagebreak" + "\n\n" + r"\noindent")
-        f.write(aux_table_json2tex(layer["auxiliary"]))
+        if long_aux:
+            f.write(aux_table_json2tex_long(layer["auxiliary"]))
+        else:
+            f.write(aux_table_json2tex(layer["auxiliary"]))
     else:
         f.write("\n")
 
@@ -282,5 +295,5 @@ if __name__ == "__main__":
 
     with open('LayerScanningTables.tex','w') as f:
         for layer in processed_json:
-            write_table_from_processed_json(f, layer)
+            write_table_from_processed_json(f, layer, long_aux=True)
 

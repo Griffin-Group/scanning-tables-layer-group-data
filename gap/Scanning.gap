@@ -22,6 +22,38 @@ AssertLayerGroup := function(Glayer, name)
   fi;
 end;
 
+VectorNormSquared := function(v)
+  if not IsRowVector(v) then
+    Error("v is not a vector.");
+  fi;
+  return Sum(List(v, x->x^2));
+end;
+
+VectorLengthRatio := function(v1, v2)
+  local Rsq, num, den;
+  #% ratio of |v2|/|v1|. Problems if irrational.
+  # Square of the ratio
+  Rsq := VectorNormSquared(v2) / VectorNormSquared(v1);
+  if IsInt(Rsq) then
+    if IsSquareInt(Rsq) then
+      return RootInt(Rsq);
+    else
+      Print("Ratio squared, ", Rsq, ", is not a square number! Returning a float.\n");
+      return Rsq^0.5;
+    fi;
+  else
+    # Rsq is rational, so do the numerator and denominator separately.
+    num := NumeratorRat(Rsq);
+    den := DenominatorRat(Rsq);
+    if IsSquareInt(num) and IsSquareInt(den) then
+      return RootInt(num) / RootInt(den);
+    else
+      Print("Ratio squared, ", Rsq, ", is not a square number! Returning a float.\n");
+      return Rsq^0.5;
+    fi;
+  fi;
+end;
+
 StandardOriginTransformationOfGroupByInversion := function(G)
   local d, g, T, t, s;
   # Per International Tables, if it's centrosymmetric, put origin on an
@@ -216,6 +248,134 @@ StandardOriginTransformationOfLayerGroup48 := function(G)
   fi;
 end;
 
+StandardOriginTransformationOfRodGroup14 := function(G)
+  local P, basis, c, ops, op, 2x, 2xS, Q, t, t2;
+  # The origin sits on the 2-fold axis pointing along 'x'.
+  # This is, of course, only meaningful if G is in a Cartesian basis.
+  # Get one of the candidate origins.
+  P := StandardOriginTransformationOfGroupByWyckoff(G);
+  # Check the basis.
+  c := TranslationBasis(G)[1];
+  if OrientationOfVector(c) <> 3 then
+    # The c-vector should be this one
+    # In principle, other settings exist.
+    # If I had to, I could transform G into a setting with c pointing in this direction
+    # or do a setting-dependent check.
+    # But I don't think I need that for my purposes.
+    return P;
+  fi;
+  basis := SymmetricInternalBasis(G);
+  if 1 in List(basis, OrientationOfVector) then
+    # We have a well defined x axis.
+    # Find the 2x operator.
+    ops := RepresentativeSymmetryOps(G);
+    for op in ops do
+      if Order(op) > 1
+        and ((IsAffineCrystGroupOnRight(G) and [1,0,0,0] * op = [1,0,0,0]) 
+        or (IsAffineCrystGroupOnLeft(G) and op * [1,0,0,0] = [1,0,0,0])) then
+        2x := op;
+        break;
+      fi;
+    od;
+    if not IsBound(2x) then
+      Error("Basis of R14 includes [1,0,0] but unable to find 2x operator! (Return to continue with previously-found origin.");
+      return P;
+    fi;
+    # We now check if the origin in P is on 2x or not.
+    if IsAffineCrystGroupOnRight(G) then
+      2xS := Inverse(P) * 2x * P;
+      t := 2xS[4]{[1..3]};
+    else
+      2xS := P * 2x * Inverse(P);
+      t := 2xS{[1..3]}[4];
+    fi;
+    if IsInt(t[3]/c[3]) then
+      # We have the correct origin.
+      return P;
+    else
+      # We have the wrong origin, by c/4.
+      if IsAffineCrystGroupOnRight(G) then
+        t := P[4]{[1..3]};
+      else
+        t := P{[1..3]}[4];
+      fi;
+      # It's +/- c/4, so choose one which takes us closer to zero.
+      if (t[3] < 0) = (c[3] > 0) then
+        t2 := c[3]/4;
+      else
+        t2 := -c[3]/4;
+      fi;
+      # Create a new transformation matrix.
+      Q := List(P, ShallowCopy); # Clone P.
+      if IsAffineCrystGroupOnRight(G) then
+        Q[4][3] := Q[4][3] + t2;
+      else
+        Q[3][4] := Q[3][4] + t2;
+      fi;
+      return Q;
+    fi;
+  else
+    return P;
+  fi;
+end;
+
+StandardOriginTransformationOfRodGroup19 := function(G)
+  local P, 2x, 2xS, Q, c, t, t2, OD, t3, i;
+  # The standard origin of R19 p2cm sits on the two-fold rotation axis, not the mirror
+  # Get the default answer. Then we'll shift by c/4 if it's off.
+  P := StandardOriginTransformationOfGroupByWyckoff(G);
+  # Find the two-fold rotation
+  OD := OrderDetMatrixOfGroup(G);
+  for i in OD do
+    if i[1] = 2 and i[2] = 1 then
+      2x := i[3];
+      break;
+    fi;
+  od;
+  if not IsBound(2x) then
+    Error("Group believed to be R19 did not contain a 2-fold rotation! (Return to use old origin.)");
+    return P;
+  fi;
+  # Get the translation component
+  if IsAffineCrystGroupOnRight(G) then
+    2xS := Inverse(P) * 2x * P;
+    t := 2x[4]{[1..3]};
+  else
+    2xS := P * 2x * Inverse(P);
+    t := 2x{[1..3]}[4];
+  fi;
+  c := TranslationBasis(G)[1];
+  if IsInt(VectorLengthRatio(c, t)) then
+    # t is an integer multiple of c
+    # We have the right origin.
+    return P;
+  else
+    # We're off by c/4.
+    if IsAffineCrystGroupOnRight(G) then
+      t := P[4]{[1..3]};
+    else
+      t := P{[1..3]}[4];
+    fi;
+    # It's +/- c/4, so choose one which takes us closer to zero.
+    t2 := t + c/4;
+    t3 := t - c/4;
+    if Sum(t2, x -> x^2) >= Sum(t3, x -> x^2) then
+      # Choose the smaller vector
+      # Or the one that's more likely to be negative if equal
+      # (because origin is negative of this vector).
+      t2 := t3;
+    fi;
+    # Copy the matrix.
+    Q := List(P, ShallowCopy);
+    if IsAffineCrystGroupOnRight(G) then
+      Q[4]{[1..3]} := t2;
+    else
+      Q{[1..3]}[4] := t2;
+    fi;
+    return Q;
+  fi;
+end;
+
 StandardOriginTransformationOfGroup := function(G)
   local d, nums;
   #% Gives the transformation matrix which shifts a group to have a standard origin (as defined by the International Tables).
@@ -233,6 +393,15 @@ StandardOriginTransformationOfGroup := function(G)
     elif nums = [48] then
       # Another special case, L48 cmme has two inversion centers with distinct settings.
       return StandardOriginTransformationOfLayerGroup48(G);
+    fi;
+  # Special case: rod groups 14 p222_1 and 19 p2cm have two possible origin choices
+  elif d = 3 and Length(TranslationBasis(G)) = 1 then
+    # Rod group
+    nums := RodGroupNumWithMatchingOps(G);
+    if 14 in nums then
+      return StandardOriginTransformationOfRodGroup14(G);
+    elif 19 in nums then
+      return StandardOriginTransformationOfRodGroup19(G);
     fi;
   fi;
   if -1*IdentityMat(d) in PointGroup(G) then
@@ -570,39 +739,6 @@ SpecialScanSOfLayerGroup := function(Glayer, vrod, vscan)
     fi;
   od;
   return sSet;
-end;
-
-
-VectorNormSquared := function(v)
-  if not IsRowVector(v) then
-    Error("v is not a vector.");
-  fi;
-  return Sum(List(v, x->x^2));
-end;
-
-VectorLengthRatio := function(v1, v2)
-  local Rsq, num, den;
-  #% ratio of |v2|/|v1|. Problems if irrational.
-  # Square of the ratio
-  Rsq := VectorNormSquared(v2) / VectorNormSquared(v1);
-  if IsInt(Rsq) then
-    if IsSquareInt(Rsq) then
-      return RootInt(Rsq);
-    else
-      Print("Ratio squared, ", Rsq, ", is not a square number! Returning a float.\n");
-      return Rsq^0.5;
-    fi;
-  else
-    # Rsq is rational, so do the numerator and denominator separately.
-    num := NumeratorRat(Rsq);
-    den := DenominatorRat(Rsq);
-    if IsSquareInt(num) and IsSquareInt(den) then
-      return RootInt(num) / RootInt(den);
-    else
-      Print("Ratio squared, ", Rsq, ", is not a square number! Returning a float.\n");
-      return Rsq^0.5;
-    fi;
-  fi;
 end;
 
 # Next task: create a scanning table.
