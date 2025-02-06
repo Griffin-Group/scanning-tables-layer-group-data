@@ -78,7 +78,7 @@ M. I. Aroyo, A. Kirov, C. Capillas, J. M. Perez-Mato & H. Wondratschek
 "Bilbao Crystallographic Server II: Representations of crystallographic point groups and space groups"
 Acta Cryst. A62, 115-128 (2006). doi:10.1107/S0108767305040286
 
-V. Kopský  and D. B. Litvin,
+V. Kopský and D. B. Litvin,
 "Scanning of Space Groups", in "Group Theoretical Methods in Physics", edited by Y. Saint-Aubin and L. Vinet
 (World Scientific, Singapore, 1989), pp. 263–266.
 

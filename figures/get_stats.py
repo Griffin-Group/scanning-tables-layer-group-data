@@ -583,6 +583,9 @@ def main(print_stats:bool=True, include_H:bool=True, norm:str="path",
     if sankey:
         layer_sankey(scanning_table, oblique_scanning, columns=columns,
                      norm=norm)
+        layer_class_sankey(scanning_table, oblique_scanning, columns=columns,
+                           norm=norm, filename="layer_class_sankey.pdf",
+                           height=280, font_family=font)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
