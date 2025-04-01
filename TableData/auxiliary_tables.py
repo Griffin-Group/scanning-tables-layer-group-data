@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 # Copyright 2025 Bernard Field
 
+import os
 import re
 import itertools
 
 from hermann_mauguin import layernumber_to_HM, texify_layer_HM, texify_rod_HM
 from load_json import load_json
 
-oblique_scanning = load_json('ObliqueScanning.json')
+oblique_scanning = load_json(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ObliqueScanning.json'))
 
 cvec = r"\mathbf{c}"
 

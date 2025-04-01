@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # Copyright 2025 Bernard Field
 
+import os
 import warnings
 import json
 
@@ -8,7 +9,7 @@ from hermann_mauguin import rodnumber_to_HM, layernumber_to_HM, texify_rod_HM, t
 from load_json import load_json
 from auxiliary_tables import aux_table_json, aux_table_json2tex, expand_aux_table_json, aux_table_json2tex_long
 
-all_orbits = load_json('Orbits.json')
+all_orbits = load_json(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'Orbits.json'))
 
 cvec = r"\mathbf{c}"
 
@@ -201,6 +202,9 @@ def process_spec_s(s_list:list, H:int, H_setting:str, H_origin:list) -> str:
     """
     For a list of special locations s, convert to string which presents the linear orbits.
     """
+    # Short-cut: if s_list is single element, no orbit to group it into.
+    if len(s_list) == 1:
+        return str(s_list).replace("'","").strip("[]")
     try:
         # Get the s values which are in the same orbit.
         orbits = _get_orbit(H, H_setting, H_origin)

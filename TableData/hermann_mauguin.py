@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 # Copyright 2025 Bernard Field
 
+import os
+
 from load_json import load_json
 
-names = load_json('groupnames.json')
+names = load_json(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'groupnames.json'))
 
 def texify_rod_HM(name:str) -> str:
     return r'\ensuremath{' + name.replace('-',r'\bar').replace('p',r'\mathscr{p}') + r'}'

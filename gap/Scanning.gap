@@ -92,7 +92,7 @@ StandardOriginTransformationOfGroupByInversion := function(G)
 end;
 
 StandardOriginTransformationOfGroupByWyckoff := function(G)
-  local d, W, wy, maxwy, wysize, maxsize, needtranslate, needtranslatetmp, t, M, x;
+  local d, W, wy, maxwy, wysize, maxsize, needtranslate, needtranslatetmp, t, M, x, accept;
   # For non-centrosymmetric groups, the origin is at a point of a highest symmetry site.
   d := DimensionOfMatrixGroup(G) - 1;
   # First, get our symmetry sites, the Wyckoff Positions
@@ -104,20 +104,44 @@ StandardOriginTransformationOfGroupByWyckoff := function(G)
   needtranslate := true;
   for wy in W do;
     wysize := Size(WyckoffStabilizer(wy));
-    if (wysize > maxsize) or (wysize = maxsize and needtranslate) then
-      # If we have a new biggest, accept it unconditionally.
-      # Otherwise, if we have a tie, only accept it if our current best
-      # needs a translation (in case we can find one which doesn't).
-      
+    if (wysize >= maxsize) then
+      # We have a new contender. If it's bigger, we'll accept it unconditionally.
+      # But otherwise, we have a few criteria.
+      # There are some Wyckoff positions that are preferred over others.
+      # E.g. 4 > 222, or 2 > m, even if they both have the same size.
+      # Otherwise, if the current position requires a translation but this new
+      # position can do a smaller translation, do it.
+
       # Check whether a translation will be necessary
       # This is done by checking whether this Wyckoff position is equivalent
       # to a similar Wyckoff position which intersects the origin
       needtranslatetmp := WyckoffPositionObject(rec(basis:=WyckoffBasis(wy), class:=1, spaceGroup := WyckoffSpaceGroup(wy), translation := [1..d]*0)) <> wy;
-      # If this new Wyckoff position is of the same size and also needs
-      # translating, then only accept it if the vector is shorter.
-      # This shortest-if-all-else-equal condition ensures we get the same answer
-      # even when the positions are arranged differently.
-      if (wysize > maxsize) or not needtranslatetmp or WyckoffTranslation(wy)*WyckoffTranslation(wy) < WyckoffTranslation(maxwy)*WyckoffTranslation(maxwy) then
+
+      accept := false;
+      if wysize > maxsize then
+        # The new position has a greater size.
+        accept := true;
+      elif Maximum(List(WyckoffStabilizer(wy),Order)) > Maximum(List(WyckoffStabilizer(maxwy),Order)) then
+        # The new position is on a higher-order rotation axis.
+        accept := true;
+      elif Maximum(List(WyckoffStabilizer(wy),Order)) < Maximum(List(WyckoffStabilizer(maxwy),Order)) then
+        accept := false;
+      elif Length(WyckoffBasis(wy)) < Length(WyckoffBasis(maxwy)) then
+        # The position is on a rotation axis rather than a mirror plane.
+        accept := true;
+      elif Length(WyckoffBasis(wy)) > Length(WyckoffBasis(maxwy)) then
+        accept := false;
+      elif needtranslate then
+        # If this new Wyckoff position is of the same size and also needs
+        # translating, then only accept it if the vector is shorter.
+        # This shortest-if-all-else-equal condition ensures we get the same answer
+        # even when the positions are arranged differently.
+        if not needtranslatetmp or WyckoffTranslation(wy)*WyckoffTranslation(wy) < WyckoffTranslation(maxwy)*WyckoffTranslation(maxwy) then
+          accept := true;
+        fi;
+      fi;
+      
+      if accept then
         maxwy := wy;
         maxsize := wysize;
         needtranslate := needtranslatetmp;
@@ -339,15 +363,30 @@ StandardOriginTransformationOfRodGroup19 := function(G)
   # Get the translation component
   if IsAffineCrystGroupOnRight(G) then
     2xS := Inverse(P) * 2x * P;
-    t := 2x[4]{[1..3]};
+    t := 2xS[4]{[1..3]};
   else
     2xS := P * 2x * Inverse(P);
-    t := 2x{[1..3]}[4];
+    t := 2xS{[1..3]}[4];
   fi;
   c := TranslationBasis(G)[1];
   if IsInt(VectorLengthRatio(c, t)) then
     # t is an integer multiple of c
     # We have the right origin.
+    # Or, at least, a right origin. But the origin is defined modulo c/2.
+    # So we can potentially simplify.
+    if IsAffineCrystGroupOnRight(G) then
+      t := P[4]{[1..3]};
+    else
+      t := P{[1..3]}[4];
+    fi;
+    t2 := t - c/2;
+    if Sum(t, x->x^2) > Sum(t2, x->x^2) then
+      return TranslationAffineMatrix(t2);
+    fi;
+    t2 := t + c/2;
+    if Sum(t, x->x^2) > Sum(t2, x->x^2) then
+      return TranslationAffineMatrix(t2);
+    fi;
     return P;
   else
     # We're off by c/4.
@@ -376,6 +415,155 @@ StandardOriginTransformationOfRodGroup19 := function(G)
   fi;
 end;
 
+StandardOriginTransformationOfLayerGroup64 := function(G)
+  local P, OD, ops, T, M, dir, t, Q, idx, candidates;
+  # L64, p4/nmm. Our default Origin Choice 2, on an inversion centre,
+  # has two subtly different settings.
+  # We want the inversion centre on the (-110) mirror and 2-fold axis.
+
+  # Shift onto an inversion centre
+  P := StandardOriginTransformationOfGroupByInversion(G);
+  # Grab the mirror operators
+  OD := OrderDetSymMatrixOfGroup(G^P);
+  ops := Filtered(OD, x -> x[1] = 2 and x[2] = -1 and x[3]);
+  ops := ops{[1..Length(ops)]}[4];
+  if Length(ops) <> 4 then
+    Error("We don't have 4 mirror operations. I don't think this group is L64.");
+  fi;
+  T := TranslationBasis(G);
+  dir := T[2] - T[1]; # (-110)
+  # Find the mirror operation with (-1,1,0) axis.
+  # Filter: vector AxisOfOperator is a scalar multiple of vector dir.
+  ops := Filtered(ops, x -> SolutionMat([dir],AxisOfOperator(x)) <> fail);
+  if Length(ops) < 1 then
+    Error("No mirror operations with (-110); cannot refine origin. (return to use old origin)");
+    return P;
+  fi;
+  if Length(ops) > 1 then
+    Error("Multiple mirror operations with (-110), when only expected one. Cannot refine origin. (return to use old origin)");
+    return P;
+  fi;
+  M := ops[1];
+  t := M{[1..3]}[4]; # Translation component.
+  if TranslationAffineMatrix(t) in TranslationSubgroup(G) then
+    # We have the correct origin.
+    return P;
+  else
+    # We are off by a/2 or b/2.
+    # Get original translation component.
+    t := P{[1..3]}[4];
+    # Check the possibilities
+    candidates := [t - T[1]/2, t - T[2]/2, t + T[1]/2, t + T[2]/2];
+    # Find the smallest one
+    idx := PositionMinimum(candidates, x -> Sum(x, y->y^2));
+    t := candidates[idx];
+    # Apply the new translation.
+    Q := List(P, ShallowCopy);
+    Q{[1..3]}[4] := t;
+    return Q;
+  fi;
+end;
+
+StandardOriginTransformationOfGroupOn2z := function(G)
+  local P, T, ST, z, ops, 2z, op, 2zS, t, x, t2, t3, Q;
+  # The standard origin of L20 p2_122 sits on the 2z axis, not the 2y axis.
+  # Get the default answer. Then we'll shift by c/4 if it's off.
+  P := StandardOriginTransformationOfGroupByWyckoff(G);
+  # Fortunately for us, the 2z axis is well-defined as the out-of-plane direction.
+  # Check the translation basis
+  T := TranslationBasis(G);
+  ST := SymmetricInternalBasis(G);
+  z := Filtered(ST, x -> not x in T)[1];
+  # The z vector is the basis vector not in the translation basis.
+  # Find the 2z operator.
+  ops := RepresentativeSymmetryOps(G);
+  for op in ops do
+    if Order(op) > 1 and (AxisOfOperator(op) = z) and Determinant(op) = 1 then
+      2z := op;
+      break;
+    fi;
+  od;
+  if not IsBound(2z) then
+    Error("Unable to find 2z operator in L20! (Return to continue with previously-found origin.");
+    return P;
+  fi;
+  # We now check if the origin in P is on 2x or not.
+  if IsAffineCrystGroupOnRight(G) then
+    2zS := Inverse(P) * 2z * P;
+    t := 2zS[4]{[1..3]};
+  else
+    2zS := P * 2z * Inverse(P);
+    t := 2zS{[1..3]}[4];
+  fi;
+  if TranslationAffineMatrix(t) in TranslationSubgroup(G) then
+    # We have the correct origin.
+    return P;
+  else
+    # We have the wrong origin, by x/4.
+    # x is the lattice vector parallel (or antiparallel) to t.
+    if AbsoluteValue(T[1] * t) > AbsoluteValue(T[2] * t) then
+      x := T[1];
+    else
+      x := T[2];
+    fi;
+    # Get the current translation vector.
+    if IsAffineCrystGroupOnRight(G) then
+      t := P[4]{[1..3]};
+    else
+      t := P{[1..3]}[4];
+    fi;
+    # It's +/- x/4, so choose one which takes us closer to zero.
+    t2 := t + x/4;
+    t3 := t - x/4;
+    if Sum(t2, x -> x^2) >= Sum(t3, x -> x^2) then
+      # Choose the smaller vector
+      # Or the one that's more likely to be negative if equal
+      # (because origin is negative of this vector).
+      t2 := t3;
+    fi;
+    # Copy the matrix.
+    Q := List(P, ShallowCopy);
+    if IsAffineCrystGroupOnRight(G) then
+      Q[4]{[1..3]} := t2;
+    else
+      Q{[1..3]}[4] := t2;
+    fi;
+    return Q;
+  fi;
+end;
+
+StandardOriginTransformationOfGroupOnScrew := function(G)
+  local ODS, op, tloc, P;
+  # For L9, L29, L33, which has the origin on a 2-fold screw axis.
+  # There are no Wyckoff positions, or at least none that help.
+  # So we find the two-fold screw.
+  ODS := OrderDetSymMatrixOfGroup(G);
+  # Get the first one that has order 2, determinant 1, and is not 
+  # symmorphic; get its matrix.
+  op := Filtered(ODS, x->x[1]=2 and x[2]=1 and x[3]=false)[1][4];
+  # Get the location translation component.
+  tloc := DecomposeMatrixTranslationOnRight(TransposedMat(op))[2];
+  # Make the translation matrix.
+  P := TranslationAffineMatrix(-tloc/2);
+  return P;
+end;
+
+StandardOriginTransformationOfGroupOnGlide := function(G)
+  local ODS, op, tloc, P;
+  # pb11 has a sinlge mirror glide plane. Origin is on it.
+  # Ditto for p11a
+  # So we find the mirror glide.
+  ODS := OrderDetSymMatrixOfGroup(G);
+  # Get the first one that has order 2, determinant -1, and is not 
+  # symmorphic; get its matrix.
+  op := Filtered(ODS, x->x[1]=2 and x[2]=-1 and x[3]=false)[1][4];
+  # Get the location translation component.
+  tloc := DecomposeMatrixTranslationOnRight(TransposedMat(op))[2];
+  # Make the translation matrix.
+  P := TranslationAffineMatrix(-tloc/2);
+  return P;
+end;
+
 StandardOriginTransformationOfGroup := function(G)
   local d, nums;
   #% Gives the transformation matrix which shifts a group to have a standard origin (as defined by the International Tables).
@@ -393,6 +581,37 @@ StandardOriginTransformationOfGroup := function(G)
     elif nums = [48] then
       # Another special case, L48 cmme has two inversion centers with distinct settings.
       return StandardOriginTransformationOfLayerGroup48(G);
+    elif nums = [20] then
+      # Another special case. L20 p2_122 have two distinct origin choices. One is conventional
+      return StandardOriginTransformationOfGroupOn2z(G);
+    elif 18 in nums then
+      # L18 has a second lower-symmetry Wyckoff. c2/m11
+      nums := FilterLayerGroupNumWithMatchingWyckoff(G, nums);
+      if nums = [18] then
+        return StandardOriginTransformationOfGroupByWyckoff(G);
+      fi;
+    elif 24 in nums then
+      # L24, pma2, has origin on 2z rather than the mirror.
+      nums := FilterLayerGroupNumWithMatchingWyckoff(G, nums);
+      if nums = [24] then
+        return StandardOriginTransformationOfGroupOn2z(G);
+      fi;
+    elif nums = [51] or nums = [63] or nums = [66] or nums = [71,72] or nums = [75] or nums = [80] then
+      # p4/m, has a second lower symmetry inversion center.
+      # And p4/mbm has inversion centers but one is has a higher order rotation on it.
+      # And several trigonal and hexagonal groups have lower symmetry inversion centres.
+      return StandardOriginTransformationOfGroupByWyckoff(G);
+    elif nums = [64] then
+      return StandardOriginTransformationOfLayerGroup64(G);
+    elif nums = [9] or nums = [33] then
+      return StandardOriginTransformationOfGroupOnScrew(G);
+    elif 29 in nums then
+      if ITNumberOfLayerGroup(G) = 29 then
+        return StandardOriginTransformationOfGroupOnScrew(G);
+      fi;
+    elif nums = [5,12] then
+      # p11a and pb11.
+      return StandardOriginTransformationOfGroupOnGlide(G);
     fi;
   # Special case: rod groups 14 p222_1 and 19 p2cm have two possible origin choices
   elif d = 3 and Length(TranslationBasis(G)) = 1 then
@@ -407,6 +626,7 @@ StandardOriginTransformationOfGroup := function(G)
   if -1*IdentityMat(d) in PointGroup(G) then
     # Per International Tables, if it's centrosymmetric, put origin on an
     # inversion center
+    # (Finding an inversion center is also cheaper than by Wyckoff positions)
     return StandardOriginTransformationOfGroupByInversion(G);
   else
     # Otherwise, find the origin using the Wyckoff positions.
