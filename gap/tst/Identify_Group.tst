@@ -103,6 +103,11 @@ gap> SettingOfRodGroupNC(RodGroupIT(6, "bac"),6);
 gap> SettingOfLayerGroupNC(LayerGroupIT(24,'b'),24);
 'b'
 
+# A tricky case that came up.
+gap> G := LayerGroupIT(36) ^ [[-1,-1,0,0],[1,-1,0,3/4],[0,0,1,0],[0,0,0,1]];;
+gap> ITNumberOfLayerGroup(G);
+36
+
 gap> ChangeDirectoryCurrent("tst");
 true
 gap> STOP_TEST( "Identify_Group.tst" );

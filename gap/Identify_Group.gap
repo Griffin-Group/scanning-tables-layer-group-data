@@ -688,7 +688,7 @@ LayerGroupNum31Or36NC := function(G)
   # Now we check the *primitive* translation basis
   T := TranslationBasis(G);
   # If this basis has fractional components, then we have a centering lattice
-  if 1/2 in Flat(T) then
+  if not ForAll(Flat(T), IsInt) then
     return 36;
   else
     return 31;
