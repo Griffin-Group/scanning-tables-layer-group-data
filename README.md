@@ -20,10 +20,11 @@ Some of these figures were used in the paper.
 
 GAP scripts and functions used to generate the scanning tables.
 `Identify_Group.gap` and `RepresentativeSymmetryOps.gap` have broad applications for processing crystallographic groups and identifying layer and rod groups.
+`FindOrigin.gap` also has broad applications for layer and rod groups, although its scope is more restricted.
 `Scanning.gap` contains functions specific to generating the scanning tables.
 The `tst/` directory contains unit tests for these functions, if you want to test your installation.
 `Make*.gap` create the data files.
-`MakeAllScanningTables.gap` takes many minutes to run on a personal computer.
+`MakeAllScanningTables.gap` takes about 10 minutes to run on a personal computer.
 
 ### `TableData`
 
