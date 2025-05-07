@@ -1366,8 +1366,7 @@ tables := [
       general_length := 1,
       general_origin := [ 0, 0, 0 ],
       general_setting := '1',
-      orientation := 
-       [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ] ],
+      orientation := [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ] ],
       special := [ rec(
               length := 1,
               number := 3,
@@ -1383,8 +1382,7 @@ tables := [
       general_length := 1,
       general_origin := [ 0, 0, 0 ],
       general_setting := '1',
-      orientation := 
-       [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ] ],
+      orientation := [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ] ],
       special := [ rec(
               length := 1,
               number := 3,
@@ -1400,8 +1398,7 @@ tables := [
       general_length := 1,
       general_origin := [ 0, 0, 0 ],
       general_setting := "bac",
-      orientation := 
-       [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ] ],
+      orientation := [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ] ],
       special := [ rec(
               length := 1,
               number := 6,
@@ -1961,8 +1958,7 @@ tables := [
       general_length := 1,
       general_origin := [ 0, 0, 0 ],
       general_setting := '1',
-      orientation := 
-       [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ], 
+      orientation := [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ], 
           [ 1, 2, 0 ], [ 2, 1, 0 ] ],
       special := [  ] ) ],
 [ rec(
@@ -1975,8 +1971,7 @@ tables := [
       general_length := 1,
       general_origin := [ 0, 0, 0 ],
       general_setting := '1',
-      orientation := 
-       [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ], 
+      orientation := [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ], 
           [ 1, 2, 0 ], [ 2, 1, 0 ] ],
       special := [ rec(
               length := 1,
@@ -2200,8 +2195,7 @@ tables := [
       general_length := 1,
       general_origin := [ 0, 0, 0 ],
       general_setting := '1',
-      orientation := 
-       [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ], 
+      orientation := [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ], 
           [ 1, 2, 0 ], [ 2, 1, 0 ] ],
       special := [ rec(
               length := 1,
@@ -2219,8 +2213,7 @@ tables := [
       general_length := 1,
       general_origin := [ 0, 0, 0 ],
       general_setting := "bac",
-      orientation := 
-       [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ], 
+      orientation := [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ], 
           [ 1, 2, 0 ], [ 2, 1, 0 ] ],
       special := [  ] ) ],
 [ rec(
@@ -2233,8 +2226,7 @@ tables := [
       general_length := 1,
       general_origin := [ 0, 0, 0 ],
       general_setting := "bac",
-      orientation := 
-       [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ], 
+      orientation := [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ], 
           [ 1, 2, 0 ], [ 2, 1, 0 ] ],
       special := [ rec(
               length := 1,
@@ -2252,8 +2244,7 @@ tables := [
       general_length := 1,
       general_origin := [ 0, 0, 0 ],
       general_setting := "abc",
-      orientation := 
-       [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ], 
+      orientation := [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ], 
           [ 1, 2, 0 ], [ 2, 1, 0 ] ],
       special := [ rec(
               length := 1,
@@ -2276,8 +2267,7 @@ tables := [
       general_length := 1,
       general_origin := [ 0, 0, 0 ],
       general_setting := "abc",
-      orientation := 
-       [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ], 
+      orientation := [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ], 
           [ 1, 2, 0 ], [ 2, 1, 0 ] ],
       special := [ rec(
               length := 1,
@@ -2362,8 +2352,7 @@ tables := [
       general_length := 1,
       general_origin := [ 0, 0, 0 ],
       general_setting := "abc",
-      orientation := 
-       [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ], 
+      orientation := [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 1, 1, 0 ], [ 1, -1, 0 ], 
           [ 1, 2, 0 ], [ 2, 1, 0 ] ],
       special := [ rec(
               length := 1,
