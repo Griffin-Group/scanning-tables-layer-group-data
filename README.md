@@ -1,11 +1,17 @@
-# Data for 'Scanning tables for the layer groups'
+# Data for 'Symmetries of all lines in monolayer crystals'
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13948517.svg)](https://doi.org/10.5281/zenodo.13948517)
+[![Paper](https://img.shields.io/badge/paper-10.1107%2FS205327332500422X-blue)](https://doi.org/10.1107/S205327332500422X)
 
-This repository contains the data and code for the paper "Scanning tables for the layer groups" by Bernard Field and Sinéad M. Griffin.
+This repository contains the data and code for the paper "Symmetries of all lines in monolayer crystals" by Bernard Field and Sinéad M. Griffin.
+Specifically, these are scanning tables, which tabulate the symmetry of every crystallographic penetration line passing through every layer group (the symmetry group of monolayer crystals/2D materials).
+This repository also contains a few incidental functions useful for processing crystallographic symmetry groups.
+
 If you use the data or code in a publication, please cite:
 
-Bernard Field, Sinéad M. Griffin, "Scanning tables for the layer groups", arXiv:2410.18750 (2024).
+  Bernard Field & Sinéad M. Griffin, "Symmetries of all lines in monolayer crystals", _Acta Cryst. A_ (2025). **81**, 339-349. [DOI:10.1107/S205327332500422X](https://doi.org/10.1107/S205327332500422X)
+
+The paper is also openly available at [arXiv:2410.18750](https://arxiv.org/abs/2410.18750).
 
 ## Layout
 
